@@ -1,14 +1,98 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>/* byexample.xyz */</title>
+    <link>https://byexample.xyz/</link>
+    <description>Recent content on /* byexample.xyz */</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://byexample.xyz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java 8 Convert Streams to &amp; from Arrays Examples</title>
+      <link>https://byexample.xyz/java/8/streamtoandfromarray/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/java/8/streamtoandfromarray/</guid>
+      <description> Converting from Streams to Arrays Converting from Arrays to Streams </description>
+    </item>
+    
+    <item>
+      <title>Java 8 Convert Streams to &amp; from Lists Examples</title>
+      <link>https://byexample.xyz/java/8/streamtoandfromlist/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/java/8/streamtoandfromlist/</guid>
+      <description>Converting from Streams to Lists Converting a Stream to a List is extremely simple since we can use the stream&amp;rsquo;s collect() function with the Collectors.toList() built-in function like in the example below:
+package xyz.byexample.java8; import java.util.List; import java.util.stream.Collectors; import java.util.stream.Stream; public class StreamToList { public static void main(String[] args) { Stream&amp;lt;Integer&amp;gt; numbersStream = Stream.of(1, 2, 3, 4, 5); List&amp;lt;Integer&amp;gt; numbersList = numbersStream.collect(Collectors.toList()); numbersList.forEach(number -&amp;gt; System.out.println(number)); } } Output
+1 2 3 4 5  Converting from Lists to Streams Again, converting a List to a Stream is extremely simple thanks to the built-in functions stream() and parallelStream() on the List type.</description>
+    </item>
+    
+    <item>
+      <title>Java 8 Optional Examples</title>
+      <link>https://byexample.xyz/java/8/optional/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/java/8/optional/</guid>
+      <description>Optional&amp;lt;T&amp;gt; is useful in avoiding the unchecked NullPointerExcecption as it provides a type-safe object that may or may not contain a value, and so it is up to the calling code to specifically check if there is a value or not. The idea is to force us to think about what to do when we&amp;rsquo;re writing code, rather than accidentally hitting a NullPointerException if a function returns null.
+For example, Optional&amp;lt;T&amp;gt; is used a lot with the Stream API to force us to thoughtfully handle the situation where there might be an empty stream.</description>
+    </item>
+    
+    <item>
+      <title>Java 8 Streams Collect Examples</title>
+      <link>https://byexample.xyz/java/8/collect/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/java/8/collect/</guid>
+      <description>Converting a Stream to a List this is a long bit of text to see what happens when we type something really rather long that should overflow on a wide monotor
+package xyz.byexample.java8; import java.util.Arrays; import java.util.List; import java.util.stream.Collectors; import java.util.stream.Stream; public class Collect { public static void main(String[] args) { List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1, 2, 3, 4, 5); List&amp;lt;String&amp;gt; letters = Arrays.asList(&amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;, &amp;#34;c&amp;#34;, &amp;#34;d&amp;#34;, &amp;#34;e&amp;#34;); System.out.println(&amp;#34;As a list: &amp;#34; + numbers.</description>
+    </item>
+    
+    <item>
+      <title>Java 8 Streams Filter Examples</title>
+      <link>https://byexample.xyz/java/8/filters/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/java/8/filters/</guid>
+      <description>Basic Filtering Filters allow you to easily remove elements from a stream that you&amp;rsquo;re not interested in.
+For example if we had a list of numbers, we can filter out any that are less than 3.
+package xyz.byexample.java8; import java.util.Arrays; import java.util.List; import java.util.stream.Collectors; public class Filter { public static void main(String[] args) { List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(1,2,3,4,5); List&amp;lt;Integer&amp;gt; lessThanThree = numbers.stream() .filter((Integer number) -&amp;gt; { return number &amp;lt; 3; }) .</description>
+    </item>
+    
+    <item>
+      <title>Java 8 Streams Map &amp; FlatMap Examples</title>
+      <link>https://byexample.xyz/java/8/map/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/java/8/map/</guid>
+      <description>Map Examples We can use map() to execute a function on every element of a stream. The classic example for this one is applying toUpperCase() on every element.
+package xyz.byexample.java8; import java.util.Arrays; import java.util.List; import java.util.stream.Collectors; public class Map { public static void main(String[] args) { List&amp;lt;String&amp;gt; letters = Arrays.asList(&amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;, &amp;#34;c&amp;#34;); List&amp;lt;String&amp;gt; upperCase = letters.stream() .map((String element) -&amp;gt; element.toUpperCase()) .collect(Collectors.toList()); System.out.println(upperCase); } } Output
+[A, B, C]  If we want to make the code more compact, we can change this to use a method reference that references String&amp;rsquo;s toUpperCase() method and apply that directly to each element of the stream.</description>
+    </item>
+    
+    <item>
+      <title>Java 8 Streams findFirst &amp; findAny Examples</title>
+      <link>https://byexample.xyz/java/8/find/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/java/8/find/</guid>
+      <description>Getting the first element from a stream We can use findFirst() and findAny() to retrieve the first - or any - element from the stream. These return an Optional&amp;lt;T&amp;gt; object.
+ findFirst() returns the first element in the stream, but findAny() does not guarantee any ordering and could return any element in the stream. This allows for maximum performance when using parallelStream() and if you dont care about ordering.</description>
+    </item>
+    
+    <item>
+      <title>Java 8 Method References Examples</title>
+      <link>https://byexample.xyz/java/8/methodreference/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/java/8/methodreference/</guid>
+      <description>Basic Example Method references are probably most useful when used with the Stream API to apply a function to every element of a stream. For example we can use map() to make each element of a Stream&amp;lt;String&amp;gt; to upper case:
+package xyz.byexample.java8; import java.util.Arrays; import java.util.List; import java.util.stream.Collectors; public class Map { public static void main(String[] args) { List&amp;lt;String&amp;gt; letters = Arrays.asList(&amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;, &amp;#34;c&amp;#34;); List&amp;lt;String&amp;gt; upperCase = letters.stream() .map(String::toUpperCase) .</description>
+    </item>
     
   </channel>
 </rss>

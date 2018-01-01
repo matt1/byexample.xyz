@@ -1,14 +1,187 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on My New Hugo Site</title>
-    <link>http://example.org/tags/</link>
-    <description>Recent content in Tags on My New Hugo Site</description>
+    <title>Tags on /* byexample.xyz */</title>
+    <link>https://byexample.xyz/tags/</link>
+    <description>Recent content in Tags on /* byexample.xyz */</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://byexample.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Array</title>
+      <link>https://byexample.xyz/tags/array/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Averagingint</title>
+      <link>https://byexample.xyz/tags/averagingint/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/averagingint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Collect</title>
+      <link>https://byexample.xyz/tags/collect/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/collect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Collectors</title>
+      <link>https://byexample.xyz/tags/collectors/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/collectors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Constructor</title>
+      <link>https://byexample.xyz/tags/constructor/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/constructor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Filter</title>
+      <link>https://byexample.xyz/tags/filter/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/filter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Find</title>
+      <link>https://byexample.xyz/tags/find/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/find/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Findany</title>
+      <link>https://byexample.xyz/tags/findany/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/findany/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Findfirst</title>
+      <link>https://byexample.xyz/tags/findfirst/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/findfirst/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flatmap</title>
+      <link>https://byexample.xyz/tags/flatmap/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/flatmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>List</title>
+      <link>https://byexample.xyz/tags/list/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Map</title>
+      <link>https://byexample.xyz/tags/map/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/map/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maxby</title>
+      <link>https://byexample.xyz/tags/maxby/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/maxby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Method Reference</title>
+      <link>https://byexample.xyz/tags/method-reference/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/method-reference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Minby</title>
+      <link>https://byexample.xyz/tags/minby/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/minby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optional</title>
+      <link>https://byexample.xyz/tags/optional/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/optional/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Partitioningby</title>
+      <link>https://byexample.xyz/tags/partitioningby/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/partitioningby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Toarray</title>
+      <link>https://byexample.xyz/tags/toarray/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/toarray/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tolist</title>
+      <link>https://byexample.xyz/tags/tolist/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/tolist/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
