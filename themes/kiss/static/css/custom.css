@@ -1,0 +1,46 @@
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.toc-content {
+    font-size: 90%;
+    margin-left: 2em;
+    order: 2;
+}
+
+.main-content {
+    order: 1;
+    width: 75%
+}
+
+@media screen and (max-width:1179px) {
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .toc-content {
+        margin-left: 0;
+        margin-bottom: 2em;
+        order: 1;
+    }
+    
+    .main-content {
+        order: 2;
+        width: 100%;
+    }
+}
+
+.tag {
+    padding: 2px 4px;
+    margin: 3px;
+    border-radius: 0;
+    background-color: #d9edf8;
+    color: #42464c;
+}
+
+.footer {
+    
+}

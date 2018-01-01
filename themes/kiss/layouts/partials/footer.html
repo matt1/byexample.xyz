@@ -1,0 +1,20 @@
+<section class="section footer">
+  <div class="container has-text-centered">
+    <p>{{ .Site.Copyright | safeHTML }}</p>
+  </div>
+  <div>
+    <strong>About</strong><br>
+    This website was created by the author as a self-reference for their own
+    personal use, but published it in the hope that others might find the
+    content useful.
+    <br><br>
+    If you spot an error in this website, please raise an issue or submit a
+    pull request on the github repository.
+
+  </div>
+</section>
+{{ if .Site.GoogleAnalytics }}
+{{ template "_internal/google_analytics_async.html" . }}
+{{ end }}
+</body>
+</html>
