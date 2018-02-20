@@ -6,7 +6,6 @@
 
       </div>
       <h1 class="title">{{ .Title }}</h1>
-      <h2 class="subtitle is-6">{{ .Date.Format "January 2, 2006" }}</h2>
       {{ if and (.Site.Params.Info.adsense) (.Params.adsenseTop) }}
       {{ partial "adsense" . }}  
       {{ end }}
