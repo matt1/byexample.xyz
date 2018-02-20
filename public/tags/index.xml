@@ -31,6 +31,24 @@
     </item>
     
     <item>
+      <title>Biconsumer</title>
+      <link>https://byexample.xyz/tags/biconsumer/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/biconsumer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bifunction</title>
+      <link>https://byexample.xyz/tags/bifunction/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/bifunction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Collect</title>
       <link>https://byexample.xyz/tags/collect/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
@@ -54,6 +72,33 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://byexample.xyz/tags/constructor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Consumer</title>
+      <link>https://byexample.xyz/tags/consumer/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/consumer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Default</title>
+      <link>https://byexample.xyz/tags/default/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/default/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Default Method</title>
+      <link>https://byexample.xyz/tags/default-method/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/default-method/</guid>
       <description></description>
     </item>
     
@@ -99,6 +144,42 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://byexample.xyz/tags/flatmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Foreach</title>
+      <link>https://byexample.xyz/tags/foreach/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/foreach/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Function</title>
+      <link>https://byexample.xyz/tags/function/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/function/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Functional Interface</title>
+      <link>https://byexample.xyz/tags/functional-interface/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/functional-interface/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lambda</title>
+      <link>https://byexample.xyz/tags/lambda/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/lambda/</guid>
       <description></description>
     </item>
     
@@ -162,6 +243,24 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://byexample.xyz/tags/partitioningby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predicate</title>
+      <link>https://byexample.xyz/tags/predicate/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/predicate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stream</title>
+      <link>https://byexample.xyz/tags/stream/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/tags/stream/</guid>
       <description></description>
     </item>
     

@@ -6,7 +6,16 @@
       </div>
       <div class="nav-right">
         <nav class="nav-item level is-mobile">
-          
+          <form id="search" name="search" action="https://www.google.com/search" method="get">
+            <input type="text" id="query" name="q" placeholder="Search..."/>
+        </form>
+        <script>
+          document.getElementById('search').addEventListener("submit", 
+            function(event) {
+                document.search.q.value += " site:byexample.xyz";
+              }
+          );
+        </script>
         </nav>
       </div>
     </nav>

@@ -78,7 +78,6 @@ if (first.isPresent()) {
 } else {
     System.out.println("Stream empty");
 }
-}
 ```
 Output
 ```
