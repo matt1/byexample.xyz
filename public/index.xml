@@ -56,6 +56,38 @@ Whenever we use a lambda expression (e.g. when creating an anonymous function wh
     </item>
     
     <item>
+      <title>Java 10 Local Type Inference</title>
+      <link>https://byexample.xyz/java/10/localinference/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/java/10/localinference/</guid>
+      <description>Local Type Inference Example In the past, we needed to repeat ourselves a lot when doing obvious things, for example here we have to declare the type of variable, even though it is obvious to both us and java:
+List&amp;lt;String&amp;gt; variable = List.of(&amp;#34;A&amp;#34;, &amp;#34;B&amp;#34;, &amp;#34;C&amp;#34;); We can save a lot of boilerplate using local type inference to let java work out the type automatically:
+package xyz.byexample.java10; public class Inference { public static void main(String[] args) { var variable = List.</description>
+    </item>
+    
+    <item>
+      <title>Java 8 Method References Examples</title>
+      <link>https://byexample.xyz/java/8/methodreference/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/java/8/methodreference/</guid>
+      <description>Basic Example Method references are probably most useful when used with the Stream API to apply a function to every element of a stream. For example we can use map() to make each element of a Stream&amp;lt;String&amp;gt; to upper case:
+package xyz.byexample.java8; import java.util.Arrays; import java.util.List; import java.util.stream.Collectors; public class Map { public static void main(String[] args) { List&amp;lt;String&amp;gt; letters = Arrays.asList(&amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;, &amp;#34;c&amp;#34;); List&amp;lt;String&amp;gt; upperCase = letters.stream() .map(String::toUpperCase) .</description>
+    </item>
+    
+    <item>
+      <title>Java 9 Modules</title>
+      <link>https://byexample.xyz/java/9/modules/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://byexample.xyz/java/9/modules/</guid>
+      <description>Intro Modules are a layer of abstraction above packages that allows you to group related packages together.
+Since the entire JDK has been split into modules, and because you have to explicitly state which modules your own modules need, your own distributable will only contain the code it needs to by using modules.
+ In the old pre-JDK9 days, your distributable would contain the entire Java Platform, which meant a lot of code you probably weren&amp;rsquo;t using (e.</description>
+    </item>
+    
+    <item>
       <title>Java 8 Optional Examples</title>
       <link>https://byexample.xyz/java/8/optional/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
@@ -116,16 +148,6 @@ package xyz.byexample.java8; import java.util.Arrays; import java.util.List; imp
       <guid>https://byexample.xyz/java/8/foreach/</guid>
       <description>forEach on an Array Since an array in Java is not an Iterable, you cant directly use forEach() with it like you can with List, Map and other classes that implement the Iterable interface.
 The workaround to this is to simply convert the array to a Stream first using the built-in Arrays.stream() function - see Converting from Streams to Arrays for more details on converting between arrays and streams.</description>
-    </item>
-    
-    <item>
-      <title>Java 8 Method References Examples</title>
-      <link>https://byexample.xyz/java/8/methodreference/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://byexample.xyz/java/8/methodreference/</guid>
-      <description>Basic Example Method references are probably most useful when used with the Stream API to apply a function to every element of a stream. For example we can use map() to make each element of a Stream&amp;lt;String&amp;gt; to upper case:
-package xyz.byexample.java8; import java.util.Arrays; import java.util.List; import java.util.stream.Collectors; public class Map { public static void main(String[] args) { List&amp;lt;String&amp;gt; letters = Arrays.asList(&amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;, &amp;#34;c&amp;#34;); List&amp;lt;String&amp;gt; upperCase = letters.stream() .map(String::toUpperCase) .</description>
     </item>
     
   </channel>

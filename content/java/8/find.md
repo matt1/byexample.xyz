@@ -1,6 +1,6 @@
 ---
 title: Java 8 Streams findFirst & findAny Examples
-linktitle: Java 8 Streams findFirst & findAny Examples
+linktitle: Streams findFirst & findAny
 date: 2018-01-01
 publishdate: 2000-01-01
 toc: true

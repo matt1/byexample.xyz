@@ -1,6 +1,6 @@
 ---
 title: Java 8 Convert Streams to & from Arrays Examples
-linktitle: Java 8 Convert Streams to & from Arrays Examples
+linktitle: Convert Streams to & from Arrays
 date: 2018-01-01
 publishdate: 2000-01-01
 toc: true

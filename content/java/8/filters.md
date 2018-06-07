@@ -1,6 +1,6 @@
 ---
 title: Java 8 Streams Filter Examples
-linktitle: Java 8 Streams Filter Examples
+linktitle: Streams Filter
 date: 2018-01-01
 publishdate: 2000-01-01
 toc: true

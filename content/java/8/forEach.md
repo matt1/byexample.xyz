@@ -1,6 +1,6 @@
 ---
 title: Java 8 Streams forEach Examples
-linktitle: Java 8 Streams forEach Examples
+linktitle: Streams forEach
 date: 2018-01-01
 publishdate: 2000-01-01
 toc: true

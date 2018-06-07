@@ -1,6 +1,6 @@
 ---
 title: Java 8 Functional Interfaces Examples
-linktitle: Java 8 Functional Interfaces Examples
+linktitle: Functional Interfaces
 date: 2018-01-01
 publishdate: 2000-01-01
 toc: true

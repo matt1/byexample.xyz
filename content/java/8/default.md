@@ -1,6 +1,6 @@
 ---
 title: Java 8 Default Method Examples
-linktitle: Java 8 Default Method Examples
+linktitle: Default Method
 date: 2018-01-01
 publishdate: 2000-01-01
 toc: true
