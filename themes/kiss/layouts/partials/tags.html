@@ -1,9 +1,0 @@
-{{ range first 1 . }}
-<a class="is-6 tag" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
-{{ end }}
-
-{{ if gt (len .) 1 }}
-  {{ range after 1 . }}
-  <a class="is-6 tag" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
-  {{ end }}
-{{ end }}
