@@ -16,8 +16,8 @@ with it like you can with `List`, `Map` and other classes that implement the
 
 The workaround to this is to simply convert the array to a `Stream` first using
 the built-in `Arrays.stream()` function - see
-<a href="{{< ref "streamToAndFromArray.md" >}}">Converting from Streams to Arrays</a>
-for more details on converting between arrays and streams.
+[Converting from Streams to Arrays](/java/8/streamToAndFromArray/) for more
+details on converting between arrays and streams.
 
 ```java
 package xyz.byexample.java8;
@@ -41,8 +41,8 @@ b
 c
 ```
 
-Alternatively we can use <a href="{{< ref "methodReference.md" >}}">method references</a>
-to simplify out code and cut out the entire anonymous function we passed in.
+Alternatively we can use [method references](/java/8/methodReference/) to
+simplify out code and cut out the entire anonymous function we passed in.
 
 ```java
     String[] letters = new String[]{"a", "b", "c"};

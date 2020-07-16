@@ -1,0 +1,6 @@
+---
+permalink: "javascript/"
+---
+
+Javascript
+

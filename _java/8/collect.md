@@ -71,8 +71,8 @@ since there is no maximum value if there are no values (for the summing and
 average operators, we would get `0` or `0.0` respectively since those are the
 sums and averages of an empty list, so no `Optional` needed there).
 
-Make sure you check out our <a href="{{< ref "optional.md" >}}">examples on
-`Optional`</a> if you'd like to see some more examples of `Optional` in Java 8.
+Make sure you check out our [examples on`Optional`](/java/8/optional/) if you'd
+like to see some more examples of `Optional` in Java 8.
 
 # Collecting into two partitions
 ```java

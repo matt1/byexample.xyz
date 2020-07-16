@@ -50,7 +50,7 @@ Error:(6, 14) java: incompatible types: int cannot be converted to java.lang.Str
 
 We can save a lot of typing using local type inference with streams.
 
-For example consider our <a href="{{< ref "java/8/filters.md" >}}">Java 8 examples for filtering a stream</a>:
+For example consider our (Java 8 examples for filtering a stream)[/java/8/filters/]:
 
 ```java
 List<Integer> numbers = Arrays.asList(1,2,3,4,5);

@@ -52,8 +52,7 @@ Output
 ```
 
 For more on method references (like what does this syntax *actually do*) make
-sure you take a look at our guide on 
-<a href="{{< ref "methodReference.md" >}}">method references</a>.
+sure you take a look at our guide on [method references](/java/8/methodReference/).
 
 ## FlatMap Examples
 `flatMap()` converts a stream of collections into a single "flat" stream.  For

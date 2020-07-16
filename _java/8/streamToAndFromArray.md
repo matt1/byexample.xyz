@@ -11,9 +11,8 @@ permalink: "java/8/streamToAndFromArray/"
 
 ## Converting from Streams to Arrays
 Converting a stream to an array is a simple task of using `Stream`'s 
-`toArray()` method combined with a
-<a href="{{< ref "methodReference.md" >}}">method references</a> to the new
-array's type.
+`toArray()` method combined with a [method reference](/java/8/methodReference/)
+to the new array's type.
 
 For example here we want an array of type `String[]` so we use a method reference
 to `String[]::new`:

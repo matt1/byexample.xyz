@@ -98,8 +98,8 @@ With the method reference approach the `s` argument is no-longer required as
 java will automatically pass the arguments to the method we're referencing.
 
 This also works in a similar way for *instance methods* as well - for example
-the classic example of <a href="{{< ref "map.md" >}}">changing the case of a
-stream of strings</a> uses a method reference of `String::toUpperCase()`.
+the classic example of [changing the case of a stream of strings](/java/8/map/)
+uses a method reference of `String::toUpperCase()`.
 
 Conceptually you can think of `String::toUpperCase()` as equivalent to the
 following lambda expression that calls the `toUpperCase()` method on the
