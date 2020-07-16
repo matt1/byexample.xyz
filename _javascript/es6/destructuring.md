@@ -2,6 +2,9 @@
 title: Javascript ES6 Destructuring
 linktitle: Destructuring
 permalink: "javascript/es6/destructuring/"
+
+
+version: "es6"
 ---
 
 ## Intro
@@ -30,7 +33,6 @@ With destructuring you can do this in a shorter & more concise way:
 ```javascript
 // With destructuring
 const {colour, species} = myAnimal;
-
 ```
 
 ## Object Destructuring
