@@ -6,6 +6,7 @@ publishdate: 2000-01-01
 toc: true
 categories: ["java8", "streams", "lambda"]
 tags: ["collect", "collectors", "averagingInt", "maxBy", "minBy", "partitioningBy", "toList"]
+permalink: "java/8/collect/"
 ---
 
 ## Collecting to a list

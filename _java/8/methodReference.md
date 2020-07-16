@@ -6,6 +6,7 @@ publishdate: 2000-01-01
 toc: true
 categories: ["java8"]
 tags: ["method reference", "map", "constructor"]
+permalink: "java/8/methodReference/"
 ---
 
 ## Basic Example

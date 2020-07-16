@@ -1,7 +1,6 @@
 collections:
   java:
     output: true
-    permalink: /java/:path/:name
 
 sass:
   sass_dir: _sass

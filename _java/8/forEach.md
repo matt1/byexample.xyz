@@ -6,6 +6,7 @@ publishdate: 2000-01-01
 toc: true
 categories: ["java8", "streams", "forEach"]
 tags: ["forEach", "toArray", "method reference"]
+permalink: "java/8/forEach/"
 ---
 
 ## forEach on an Array

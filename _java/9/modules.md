@@ -6,6 +6,7 @@ publishdate: 2000-01-01
 toc: true
 categories: ["java9", "modules"]
 tags: ["module", "jigsaw"]
+permalink: "java/9/modules/"
 ---
 
 ## Intro

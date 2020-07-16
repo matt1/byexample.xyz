@@ -6,6 +6,7 @@ publishdate: 2000-01-01
 toc: true
 categories: ["java8", "streams", "lambda"]
 tags: ["find", "findAny", "findFirst", "collect", "optional"]
+permalink: "java/8/find/"
 ---
 
 

@@ -6,6 +6,7 @@ publishdate: 2000-01-01
 toc: true
 categories: ["java10", "inference"]
 tags: ["inference", "local type", "var"]
+permalink: "java/10/localInference/"
 ---
 
 # Local Type Inference Example

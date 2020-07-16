@@ -6,6 +6,7 @@ publishdate: 2000-01-01
 toc: true
 categories: ["java8"]
 tags: ["default", "default method"]
+permalink: "java/8/default/"
 ---
 
 Default Methods provide a way to provide a default implementation for a method

@@ -6,6 +6,7 @@ publishdate: 2000-01-01
 toc: true
 categories: ["java8", "streams", "lambda"]
 tags: ["list", "collectors", "toList"]
+permalink: "java/8/streamToAndFromList/"
 ---
 
 ## Converting from Streams to Lists

@@ -6,6 +6,7 @@ publishdate: 2000-01-01
 toc: true
 categories: ["java8", "streams", "lambda"]
 tags: ["array", "collectors", "toArray"]
+permalink: "java/8/streamToAndFromArray/"
 ---
 
 ## Converting from Streams to Arrays

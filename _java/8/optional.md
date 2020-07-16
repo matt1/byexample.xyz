@@ -6,6 +6,7 @@ publishdate: 2000-01-01
 toc: true
 categories: ["java8", "optional",]
 tags: ["optional", "findFirst", "findAny"]
+permalink: "java/8/optional/"
 ---
 
 `Optional<T>` is useful in avoiding the unchecked `NullPointerException` 
