@@ -3,5 +3,5 @@
 byexample.xyz index
 ===================
 
-[Java](/java)
-[Javascript](/javascript)
+[Java](java/)
+[Javascript](javascript/)
