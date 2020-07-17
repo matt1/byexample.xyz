@@ -1,12 +1,8 @@
 ---
 title: Java 8 Convert Streams to & from Arrays Examples
 linktitle: Convert Streams to & from Arrays
-date: 2018-01-01
-publishdate: 2000-01-01
-toc: true
-categories: ["java8", "streams", "lambda"]
-tags: ["array", "collectors", "toArray"]
 permalink: "java/8/streamToAndFromArray/"
+version: "8"
 ---
 
 ## Converting from Streams to Arrays

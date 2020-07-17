@@ -1,0 +1,12 @@
+---
+permalink: "java/8/"
+---
+
+Java 8
+
+{% for example in site.java %}
+    {% if example.version == "8" %}
+    {{example.title}}
+        <a href="{{ example.permalink }}">{{example.title}}</a>
+    {% endif %}
+{% endfor %}

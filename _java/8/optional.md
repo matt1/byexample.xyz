@@ -1,12 +1,8 @@
 ---
 title: Java 8 Optional Examples
 linktitle: Optional
-date: 2018-01-01
-publishdate: 2000-01-01
-toc: true
-categories: ["java8", "optional",]
-tags: ["optional", "findFirst", "findAny"]
 permalink: "java/8/optional/"
+version: "8"
 ---
 
 `Optional<T>` is useful in avoiding the unchecked `NullPointerException` 

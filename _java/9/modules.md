@@ -1,12 +1,8 @@
 ---
 title: Java 9 Modules
 linktitle: Modules
-date: 2018-01-01
-publishdate: 2000-01-01
-toc: true
-categories: ["java9", "modules"]
-tags: ["module", "jigsaw"]
 permalink: "java/9/modules/"
+version: "9"
 ---
 
 ## Intro

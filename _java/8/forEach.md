@@ -1,12 +1,8 @@
 ---
 title: Java 8 Streams forEach Examples
 linktitle: Streams forEach
-date: 2018-01-01
-publishdate: 2000-01-01
-toc: true
-categories: ["java8", "streams", "forEach"]
-tags: ["forEach", "toArray", "method reference"]
 permalink: "java/8/forEach/"
+version: "8"
 ---
 
 ## forEach on an Array

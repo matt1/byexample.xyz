@@ -1,12 +1,8 @@
 ---
 title: Java 8 Streams Filter Examples
 linktitle: Streams Filter
-date: 2018-01-01
-publishdate: 2000-01-01
-toc: true
-categories: ["java8", "streams", "lambda"]
-tags: ["filter", "collect"]
 permalink: "java/8/filters/"
+version: "8"
 ---
 
 ## Basic Filtering

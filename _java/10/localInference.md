@@ -1,12 +1,8 @@
 ---
 title: Java 10 Local Type Inference
 linktitle: Local Type Inference
-date: 2018-01-01
-publishdate: 2000-01-01
-toc: true
-categories: ["java10", "inference"]
-tags: ["inference", "local type", "var"]
 permalink: "java/10/localInference/"
+version: "10"
 ---
 
 # Local Type Inference Example

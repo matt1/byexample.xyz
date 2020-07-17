@@ -1,12 +1,8 @@
 ---
 title: Java 8 Functional Interfaces Examples
 linktitle: Functional Interfaces
-date: 2018-01-01
-publishdate: 2000-01-01
-toc: true
-categories: ["java8"]
-tags: ["consumer", "biconsumer", "function", "bifunction", "stream", "lambda", "functional interface", "predicate"]
 permalink: "java/8/functionalInterface/"
+version: "8"
 ---
 
 Functional Interfaces in Java 8 are the key to unlocking the power of the new

@@ -1,12 +1,8 @@
 ---
 title: Java 8 Streams Collect Examples
 linktitle: Streams Collect
-date: 2018-01-01
-publishdate: 2000-01-01
-toc: true
-categories: ["java8", "streams", "lambda"]
-tags: ["collect", "collectors", "averagingInt", "maxBy", "minBy", "partitioningBy", "toList"]
 permalink: "java/8/collect/"
+version: "8"
 ---
 
 ## Collecting to a list

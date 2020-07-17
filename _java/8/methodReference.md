@@ -1,12 +1,8 @@
 ---
 title: Java 8 Method References Examples
 linktitle: Method References
-date: 2018-01-01
-publishdate: 2000-01-01
-toc: true
-categories: ["java8"]
-tags: ["method reference", "map", "constructor"]
 permalink: "java/8/methodReference/"
+version: "8"
 ---
 
 ## Basic Example

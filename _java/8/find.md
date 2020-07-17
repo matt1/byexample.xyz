@@ -1,12 +1,8 @@
 ---
 title: Java 8 Streams findFirst & findAny Examples
 linktitle: Streams findFirst & findAny
-date: 2018-01-01
-publishdate: 2000-01-01
-toc: true
-categories: ["java8", "streams", "lambda"]
-tags: ["find", "findAny", "findFirst", "collect", "optional"]
 permalink: "java/8/find/"
+version: "8"
 ---
 
 

@@ -1,12 +1,8 @@
 ---
 title: Java 8 Convert Streams to & from Lists Examples
 linktitle: Convert Streams to & from Lists
-date: 2018-01-01
-publishdate: 2000-01-01
-toc: true
-categories: ["java8", "streams", "lambda"]
-tags: ["list", "collectors", "toList"]
 permalink: "java/8/streamToAndFromList/"
+version: "8"
 ---
 
 ## Converting from Streams to Lists

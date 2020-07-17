@@ -1,12 +1,8 @@
 ---
 title: Java 8 Streams Map & FlatMap Examples
 linktitle: Streams Map & FlatMap
-date: 2018-01-01
-publishdate: 2000-01-01
-toc: true
-categories: ["java8", "streams", "lambda"]
-tags: ["map", "flatMap", "method reference"]
 permalink: "java/8/map/"
+version: "8"
 ---
 
 ## Map Examples
