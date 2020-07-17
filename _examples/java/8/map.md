@@ -2,6 +2,7 @@
 title: Java 8 Streams Map & FlatMap Examples
 linktitle: Streams Map & FlatMap
 permalink: "java/8/map/"
+lang: "java"
 version: "8"
 ---
 

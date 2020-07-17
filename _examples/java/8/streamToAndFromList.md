@@ -2,6 +2,7 @@
 title: Java 8 Convert Streams to & from Lists Examples
 linktitle: Convert Streams to & from Lists
 permalink: "java/8/streamToAndFromList/"
+lang: "java"
 version: "8"
 ---
 

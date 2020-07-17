@@ -2,6 +2,7 @@
 title: Java 8 Streams Collect Examples
 linktitle: Streams Collect
 permalink: "java/8/collect/"
+lang: "java"
 version: "8"
 ---
 

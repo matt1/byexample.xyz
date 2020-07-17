@@ -2,6 +2,7 @@
 title: Java 8 Default Method Examples
 linktitle: Default Method
 permalink: "java/8/default/"
+lang: "java"
 version: "8"
 ---
 

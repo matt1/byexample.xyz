@@ -2,6 +2,7 @@
 title: Java 8 Streams Filter Examples
 linktitle: Streams Filter
 permalink: "java/8/filters/"
+lang: "java"
 version: "8"
 ---
 

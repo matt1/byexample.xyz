@@ -2,6 +2,7 @@
 title: Java 9 Modules
 linktitle: Modules
 permalink: "java/9/modules/"
+lang: "java"
 version: "9"
 ---
 

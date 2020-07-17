@@ -2,6 +2,7 @@
 title: Java 8 Optional Examples
 linktitle: Optional
 permalink: "java/8/optional/"
+lang: "java"
 version: "8"
 ---
 

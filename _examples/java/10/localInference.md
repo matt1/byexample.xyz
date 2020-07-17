@@ -2,6 +2,7 @@
 title: Java 10 Local Type Inference
 linktitle: Local Type Inference
 permalink: "java/10/localInference/"
+lang: "java"
 version: "10"
 ---
 

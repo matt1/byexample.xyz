@@ -2,6 +2,7 @@
 title: Java 8 Streams forEach Examples
 linktitle: Streams forEach
 permalink: "java/8/forEach/"
+lang: "java"
 version: "8"
 ---
 

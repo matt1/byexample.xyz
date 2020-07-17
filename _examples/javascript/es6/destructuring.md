@@ -2,6 +2,7 @@
 title: Javascript ES6 Destructuring
 linktitle: Destructuring
 permalink: "javascript/es6/destructuring/"
+lang: "javascript"
 version: "es6"
 ---
 

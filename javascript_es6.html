@@ -1,12 +1,6 @@
 ---
 permalink: "javascript/es6/"
+layout: directory_listing
+lang: "javascript"
+version: "es6"
 ---
-
-Javascript ES6
-
-{% for example in site.javascript %}
-    {% if example.version == "es6" %}
-    {{example.title}}
-        <a href="{{ example.permalink }}">{{example.title}}</a>
-    {% endif %}
-{% endfor %}

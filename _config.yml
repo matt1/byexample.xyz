@@ -1,9 +1,6 @@
 collections:
-  java:
+  examples:
     output: true
-  javascript:
-    output: true
-
 
 defaults:
   -

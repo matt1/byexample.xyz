@@ -1,12 +1,6 @@
 ---
 permalink: "java/10/"
+layout: directory_listing
+lang: "java"
+version: "10"
 ---
-
-Java 10
-
-{% for example in site.java %}
-    {% if example.version == "10" %}
-    {{example.title}}
-        <a href="{{ example.permalink }}">{{example.title}}</a>
-    {% endif %}
-{% endfor %}

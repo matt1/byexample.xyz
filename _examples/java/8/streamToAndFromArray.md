@@ -2,6 +2,7 @@
 title: Java 8 Convert Streams to & from Arrays Examples
 linktitle: Convert Streams to & from Arrays
 permalink: "java/8/streamToAndFromArray/"
+lang: "java"
 version: "8"
 ---
 

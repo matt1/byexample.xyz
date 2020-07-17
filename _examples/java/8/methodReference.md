@@ -2,6 +2,7 @@
 title: Java 8 Method References Examples
 linktitle: Method References
 permalink: "java/8/methodReference/"
+lang: "java"
 version: "8"
 ---
 

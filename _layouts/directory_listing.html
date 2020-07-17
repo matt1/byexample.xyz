@@ -1,0 +1,8 @@
+
+{% for example in site.examples %}
+    {% if example.lang == page.lang and example.version == page.version %}
+        <a href="{{ example.url }}">{{example.title}}</a><br>
+        {{ example.excerpt }}
+        <br><br>
+    {% endif %}
+{% endfor %}

@@ -2,6 +2,7 @@
 title: Java 8 Streams findFirst & findAny Examples
 linktitle: Streams findFirst & findAny
 permalink: "java/8/find/"
+lang: "java"
 version: "8"
 ---
 
