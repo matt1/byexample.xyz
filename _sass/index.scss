@@ -1,6 +1,21 @@
 @import 'common';
 @import 'code-highlighting';
+@import 'grid';
+@import 'typography';
 
 body {
-    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+}
+
+.header {
+    background-color: #0288D1;
+    color: #fff;
+    padding: 3px;
+}
+
+.footer {
+    background-color: #f5f7fa;
+    padding: 40px 20px 80px;
 }
