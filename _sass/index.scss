@@ -1,7 +1,9 @@
 @import 'common';
 @import 'code-highlighting';
+@import 'dropdown';
 @import 'footer';
 @import 'grid';
+@import 'header';
 @import 'typography';
 @import 'toc';
 
@@ -9,10 +11,4 @@ body {
     margin: 0;
     padding: 0;
     text-rendering: optimizeLegibility;
-}
-
-.header {
-    background-color: #0288D1;
-    color: #fff;
-    padding: 3px;
 }

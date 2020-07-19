@@ -1,9 +1,9 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 48px auto auto;
+  grid-template-rows: $header-height auto auto;
   grid-template-areas:
-    "header"
+    "header-grid"
     "content-grid"
     "footer";
 }
@@ -11,10 +11,19 @@
 .content-grid {
   grid-area: content-grid;
   display: grid;
-  grid-template-columns: 75px auto 250px 75px;
+  grid-template-columns: $gutter-width auto 250px $gutter-width;
   grid-template-rows: 1fr;
   grid-template-areas:
     ". content sidebar .";
+}
+
+.header-grid {
+  grid-area: header-grid;
+  display: grid;
+  grid-template-columns: $gutter-width auto $gutter-width;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    ". header .";
 }
 
 .header {
@@ -24,7 +33,7 @@
 .footer {
   grid-area: footer;
   display: grid;
-  grid-template-columns:75px 300px auto 75px;
+  grid-template-columns: $gutter-width 300px auto $gutter-width;
   grid-template-rows: 1fr;
   grid-template-areas:
     ". footer-left footer-right .";
@@ -32,10 +41,12 @@
 
 .footer-left {
   grid-area: footer-left;
+  padding: $common-padding;
 }
 
 .footer-right {
   grid-area: footer-right;
+  padding: $common-padding;
 }
 
 .sidebar {
@@ -45,5 +56,5 @@
 
 .content {
   grid-area: content;
-  padding: 1rem;
+  padding: $common-padding;
 }
