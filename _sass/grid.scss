@@ -25,11 +25,12 @@
   grid-area: footer;
 }
 
-
 .sidebar {
   grid-area: sidebar;
+  padding: 3rem 1rem 1rem 1rem;
 }
 
 .content {
   grid-area: content;
+  padding: r1em;
 }

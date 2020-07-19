@@ -3,4 +3,8 @@
     <h1>{{ page.title }}</h1>
     {{ content }}
   </div>
+  <div class="sidebar">
+    Examples on this page<br>
+    {% include toc.html html=content id="toc" %}
+  </div>
 {% include footer.html %}
