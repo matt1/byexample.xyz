@@ -14,7 +14,7 @@
   grid-template-columns: 75px auto 250px 75px;
   grid-template-rows: 1fr;
   grid-template-areas:
-    ". content sidebar. ";
+    ". content sidebar .";
 }
 
 .header {
@@ -23,6 +23,19 @@
 
 .footer {
   grid-area: footer;
+  display: grid;
+  grid-template-columns:75px 300px auto 75px;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    ". footer-left footer-right .";
+}
+
+.footer-left {
+  grid-area: footer-left;
+}
+
+.footer-right {
+  grid-area: footer-right;
 }
 
 .sidebar {
@@ -32,5 +45,5 @@
 
 .content {
   grid-area: content;
-  padding: r1em;
+  padding: 1rem;
 }

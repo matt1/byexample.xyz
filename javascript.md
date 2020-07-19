@@ -4,4 +4,4 @@ permalink: "javascript/"
 
 Javascript
 
-* [ES6](javascript/es6/)
+* [ES6](/javascript/es6/)

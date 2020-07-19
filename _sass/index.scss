@@ -1,5 +1,6 @@
 @import 'common';
 @import 'code-highlighting';
+@import 'footer';
 @import 'grid';
 @import 'typography';
 @import 'toc';
@@ -14,9 +15,4 @@ body {
     background-color: #0288D1;
     color: #fff;
     padding: 3px;
-}
-
-.footer {
-    background-color: #f5f7fa;
-    padding: 40px 20px 80px;
 }
