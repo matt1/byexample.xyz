@@ -4,7 +4,9 @@
   font-size: 80%;
   padding: 2rem 0;
 
-  a, a:visited {
-    color: #777
+  a {
+    border-bottom: 1px dotted #777;
+    color: #777;
+    text-decoration: noe;
   }
 }

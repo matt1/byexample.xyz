@@ -71,7 +71,7 @@ sums and averages of an empty list, so no `Optional` needed there).
 Make sure you check out our [examples on `Optional`](/java/8/optional/) if you'd
 like to see some more examples of `Optional` in Java 8.
 
-# Collecting into two partitions
+## Collecting into two partitions
 ```java
 List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
 List<String> letters = Arrays.asList("a", "b", "c", "d", "e");
@@ -89,7 +89,7 @@ return only those elements that match the filter, where `partitioningBy` will
 return two partitions: one containing those elements that do meet the requirement
 and one that does not.
 
-# Joining Strings
+## Joining Strings
 ```java
 List<String> letters = Arrays.asList("a", "b", "c", "d", "e");
 System.out.println(letters.stream().collect(Collectors.joining("!")));

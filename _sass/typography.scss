@@ -4,11 +4,33 @@ body {
   line-height: 1.75;
 }
 
+a {
+  border-bottom: 1px dotted #2077b2;
+  color: #2077b2;
+  text-decoration: none;
+
+  &:hover {
+    color: #000;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0;
   scroll-margin-top: 3rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  &.title {
+    font-size: 2rem;
+  }
+}
+
+
+h2 {
+  font-size: 1.5rem;
 }
 
 .licenses {

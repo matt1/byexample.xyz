@@ -217,4 +217,3 @@ but that is trivial to add - take a look at the <a href="http://hg.openjdk.java.
 how they've done it.  You may want to consider adding default implementations
 in your customer functional interfaces to remain consistent and provide the
 greatest flexibility when interacting with other code.
-

@@ -51,6 +51,7 @@ a
 b
 c
 ```
+
 ## forEach on a List
 Using `forEach` on a `List` is just as simple as using it on a `Stream` in the
 above array example:
@@ -91,4 +92,3 @@ Key: fr Value: France
 Key: nz Value: New Zealand
 Key: us Value: United States
 ```
-

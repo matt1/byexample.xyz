@@ -6,7 +6,6 @@ lang: "javascript"
 version: "es6"
 ---
 
-## Intro
 Destructuring is basically a way of assigning variables from an object or array in a simple way.
 
 Consider a simple object with some properties:

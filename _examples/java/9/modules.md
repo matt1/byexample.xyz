@@ -6,7 +6,6 @@ lang: "java"
 version: "9"
 ---
 
-## Intro
 Modules are a layer of abstraction above packages that allows you to
 group related packages together.
 

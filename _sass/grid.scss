@@ -11,7 +11,7 @@
 .content-grid {
   grid-area: content-grid;
   display: grid;
-  grid-template-columns: $gutter-width auto 250px $gutter-width;
+  grid-template-columns: $gutter-width auto 350px $gutter-width;
   grid-template-rows: 1fr;
   grid-template-areas:
     ". content sidebar .";
@@ -33,7 +33,7 @@
 .footer {
   grid-area: footer;
   display: grid;
-  grid-template-columns: $gutter-width 300px auto $gutter-width;
+  grid-template-columns: $gutter-width 0.2fr 0.8fr $gutter-width;
   grid-template-rows: 1fr;
   grid-template-areas:
     ". footer-left footer-right .";

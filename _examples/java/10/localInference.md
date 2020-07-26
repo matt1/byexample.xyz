@@ -6,7 +6,7 @@ lang: "java"
 version: "10"
 ---
 
-# Local Type Inference Example
+## Local Type Inference Example
 
 In the past, we needed to repeat ourselves a lot when doing obvious things, for example here we have to declare the type of `variable`, even though it is obvious to both us and java:
 
@@ -42,8 +42,7 @@ For example if we use var to infer a `string` type, and then trying to assign an
 Error:(6, 14) java: incompatible types: int cannot be converted to java.lang.String
 ```
 
-
-# Streams Example
+## Streams Example
 
 We can save a lot of typing using local type inference with streams.
 
@@ -74,4 +73,4 @@ var lessThanThree = numbers.stream()
 
 System.out.println(lessThanThree);
 ```
-Obviously a very simple example - I am sure you all will have seen some hideous examples
+Obviously a very simple example - I am sure you all will have seen some hideous examples.
