@@ -1,0 +1,15 @@
+@import 'common';
+@import 'code-highlighting';
+@import 'dropdown';
+@import 'footer';
+@import 'grid';
+@import 'header';
+@import 'sidebar';
+@import 'typography';
+@import 'toc';
+
+body {
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+}

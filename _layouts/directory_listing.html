@@ -1,0 +1,14 @@
+
+{% include header.html %}
+  <div class="content">
+    {% include breadcrumbs.html %}
+    {% for example in site.examples %}
+      {% if example.lang == page.lang and example.version == page.version %}
+        <a href="{{ example.url }}">{{example.title}}</a><br>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="sidebar">
+
+  </div>
+{% include footer.html %}

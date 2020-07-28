@@ -1,0 +1,11 @@
+{% include header.html %}
+  <div class="content">
+    {% include breadcrumbs.html %}
+    <h1 class="title">{{ page.title }}</h1>
+    {{ content }}
+  </div>
+  <div class="sidebar">
+    <strong>Sections in this page</strong>
+    {% include toc.html html=content id="toc" %}
+  </div>
+{% include footer.html %}
