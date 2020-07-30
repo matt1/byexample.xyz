@@ -7,11 +7,22 @@
 }
 
 .header {
+  align-items: center;
+
   a, a:hover {
     color: #fff;
   }
 
   h1 {
     font-size: 1.5rem;
+  }
+
+  form {
+    padding-left: $common-padding;
+    input {
+      border: 0;
+      padding: 5px;
+      width: 15rem;
+    }
   }
 }

@@ -1,0 +1,13 @@
+
+.breadcrumbs {
+  background: #fff;
+  box-sizing: border-box;
+  position: sticky;
+  top: $header-height;
+}
+
+.sticky {
+  border-bottom: 1px dotted #0288D1;
+  height: $breadcrumbs-height;
+  transition: ease-in-out 0.5s;
+}
