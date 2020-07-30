@@ -14,9 +14,17 @@
     <div class="grid">
       <section class="header-grid">
         <div class="header">
-          <a href="/">
-            <h1>/* byexample.xyz */</h1>
-          </a>
+          <div class="header-title">
+            <a href="/">
+              <h1>/* byexample.xyz */</h1>
+            </a>
+          </div>
+          <div class="header-search">
+            <form method="get" id="search-google" action="https://www.google.com/search" target="_blank">
+              <input type="hidden" name="sitesearch" value="byexample.xyz" />
+              <input type="text" name="q" maxlength="255" value="" placeholder="Search examples" class="form-control" />
+            </form>
+          </div>
         </div>
 
         <div class="dropdown dropdown-closed">
@@ -30,6 +38,6 @@
             col 3
           </div>
         </div>
-      
       </section>
-      <section class="content-grid">
+
+      

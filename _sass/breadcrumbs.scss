@@ -1,0 +1,35 @@
+.breadcrumbs-grid {
+  background: #fff;
+  color: #000;
+  position: sticky;
+  top: $header-height;
+  transition: $default-transition;
+  font-size: 1rem;
+
+  a, a:active, a:visited {
+    color: #0288D1;
+    border-bottom: 1px dotted #0288D1;
+  }
+  .breadcrumbs-right {
+    display: none;
+  }
+}
+
+.sticky {
+  background-color: #3FB1EF;
+  color: #fff;
+  height: $breadcrumbs-height;
+  transition: $default-transition;
+  font-size: 0.8rem;
+
+  a, a:active, a:visited {
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .breadcrumbs-right {
+    display: initial;
+  }
+}
+
+
