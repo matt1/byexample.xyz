@@ -51,7 +51,12 @@
   display: grid;
   grid-template-columns: auto 350px;
   grid-template-rows: 1fr;
-  grid-template-areas: "breadcrumbs-main breadcrumbs-sidebar";
+  grid-template-areas: "breadcrumbs-left breadcrumbs-right";
+}
+
+
+.breadcrumbs-right {
+  padding: 0 $common-padding*2;
 }
 
 .footer {
