@@ -4,6 +4,7 @@
   height: $header-height;
   position: fixed;
   width: 100%;
+  transition: $default-transition;
 }
 
 .header {
@@ -25,4 +26,8 @@
       width: 15rem;
     }
   }
+}
+
+.sticky {
+  transition: $default-transition;
 }

@@ -1,8 +1,13 @@
 window.onscroll = () => {
-  const breadcrumbs = document.querySelector('.breadcrumbs');
+  const breadcrumbs = document.querySelector('.breadcrumbs-grid');
+  const header = document.querySelector('.header-grid');
   if (window.pageYOffset > 0) {
-    breadcrumbs.classList.add('sticky');
+    for (const elem of [breadcrumbs, header]) {
+      elem.classList.add('sticky');
+    }
   } else {
-    breadcrumbs.classList.remove('sticky');
+    for (const elem of [breadcrumbs, header]) {
+      elem.classList.remove('sticky');
+    }
   }
 };
