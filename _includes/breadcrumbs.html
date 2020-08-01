@@ -4,7 +4,7 @@
   <a href="/">Root</a>
   {% for crumb in crumbs offset: 1 %}
     {% if forloop.last %}
-    <span class="navigation-icon">🡢</span> {{ page.title | capitalize}}
+    <span class="navigation-icon">🡢</span> {{ page.title }}
     {% else %}
     <span class="navigation-icon">🡢</span> <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | capitalize | replace:'-',' ' | remove:'.html' }}</a>
     {% endif %}

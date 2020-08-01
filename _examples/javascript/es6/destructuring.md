@@ -12,7 +12,7 @@ Consider a simple object with some properties:
 
 ```javascript
 const myAnimal = {
-    species: 'dog',
+    species: 'dogs',
     legs: 4,
     colour: 'brown',
 };
@@ -33,7 +33,19 @@ With destructuring you can do this in a shorter & more concise way:
 const {colour, species} = myAnimal;
 ```
 
-## Object Destructuring
+## Order doesn't matter, but names do
+The properties are matched on names, not order.
+```javascript
+let {legs, species} = myAnimal;
+console.log(`${species} have ${legs} legs`) // logs "dogs have 4 legs"
 
+{species, legs} = myAnimal;
+console.log(`${species} have ${legs} legs`) // logs "dogs have 4 legs"
+```
 
-## Array Destructuring
+If the names are not matched, then the variables you are destructuring to are not set.
+
+```javascript
+let {l, s} = myAnimal;
+console.log(`${s} have ${l} legs`) // logs "undefined have undefined legs"
+```
