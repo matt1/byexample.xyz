@@ -16,12 +16,23 @@
       grid-template-rows: auto;
       grid-template-areas:
         ". content sidebar .";
-    
+
+      @media (max-width: $max-width) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "content";
+        padding: $common-padding
+      }
+  
       .sidebar {
         grid-area: sidebar;
         padding: 3rem 1rem 1rem 1rem;
+
+        @media (max-width: $max-width) {
+          display: none;
+        }
       }
-    
+      
       .content {
         grid-area: content;
       }
@@ -34,14 +45,33 @@
       grid-template-rows: 1fr;
       grid-template-areas:
         ". header .";
+
+      @media (max-width: $max-width) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "header";
+        padding: 0 $common-padding;
+      }
     
-        .header {
-          grid-area: header;
-          display: grid;
-          grid-template-columns: auto 350px;
-          grid-template-rows: 1fr;
-          grid-template-areas: "header-title header-search";
+      .header {
+        grid-area: header;
+        display: grid;
+        grid-template-columns: auto 350px;
+        grid-template-rows: 1fr;
+        grid-template-areas: "header-title header-search";
+
+        @media (max-width: $max-width) {
+          grid-template-columns: 1fr;
+          grid-template-areas:
+            "header-title";
         }
+
+        .header-search {
+          @media (max-width: $max-width) {
+            display: none;
+          }
+        }
+      }
     }
     
     .breadcrumbs-grid {
@@ -51,19 +81,35 @@
       grid-template-rows: 1fr;
       grid-template-areas:
         ". breadcrumbs .";
-    
-        .breadcrumbs {
-          grid-area: breadcrumbs;
-          padding: $common-padding/2 0;
-          display: grid;
-          grid-template-columns: auto 350px;
-          grid-template-rows: 1fr;
-          grid-template-areas: "breadcrumbs-left breadcrumbs-right";
-    
-          .breadcrumbs-right {
-            padding: 0 $common-padding*2;
+  
+      @media (max-width: $max-width) {
+        grid-template-columns: 1fr;
+        grid-template-areas: "breadcrumbs";
+        padding: $common-padding/2 0  $common-padding/2 $common-padding;
+      }
+        
+      .breadcrumbs {
+        grid-area: breadcrumbs;
+        padding: $common-padding/2 0;
+        display: grid;
+        grid-template-columns: auto 350px;
+        grid-template-rows: 1fr;
+        grid-template-areas: "breadcrumbs-left breadcrumbs-right";
+  
+        @media (max-width: $max-width) {
+          grid-template-columns: 1fr;
+          grid-template-areas: "breadcrumbs-left";
+          padding: 0;
+        }
+
+        .breadcrumbs-right {
+          padding: 0 $common-padding*2;
+
+          @media (max-width: $max-width) {
+            display: none;
           }
         }
+      }
     }
     
     .footer {
@@ -75,6 +121,14 @@
         ". footer-left footer-right .";
       margin-top: $common-padding;
 
+      @media (max-width: $max-width) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+          "footer-left"
+          "footer-right";
+      }
+
       .footer-left {
         grid-area: footer-left;
       }
@@ -84,3 +138,4 @@
       }
     }
 }
+
