@@ -23,7 +23,7 @@ console.log(`The answer is ${21 * 2}.`); // logs "The answer is 42."
 
 ## Escaping backticks
 ```javascript
-console.log(`This backtick is escaped: ``); // logs "This backtick is escaped: `"
+console.log(`This backtick is escaped: \``); // logs "This backtick is escaped: `"
 ```
 
 ## Newlines/linefeeds
