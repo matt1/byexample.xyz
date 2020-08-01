@@ -13,7 +13,7 @@ layout:
        </url>
   {% endif %}
   {% endfor %}
-  {% for page in site.posts %}
+  {% for page in site.examples %}
       <url>
         <loc>{{ site.url }}{{ page.url | replace: 'index.html', '' }}</loc>
         <changefreq>monthly</changefreq>
