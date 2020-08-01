@@ -1,5 +1,6 @@
 .grid {
   display: grid;
+  column-gap: $common-padding;
   grid-template-columns: 1fr;
   grid-template-rows: $header-height auto auto;
   grid-template-areas:
@@ -7,83 +8,79 @@
     "breadcrumbs-grid"
     "content-grid"
     "footer";
-}
 
-.content-grid {
-  grid-area: content-grid;
-  display: grid;
-  grid-template-columns: $gutter-width auto 350px $gutter-width;
-  grid-template-rows: auto;
-  grid-template-areas:
-    ". content sidebar .";
-}
+    .content-grid {
+      grid-area: content-grid;
+      display: grid;
+      grid-template-columns: $gutter-width auto 350px $gutter-width;
+      grid-template-rows: auto;
+      grid-template-areas:
+        ". content sidebar .";
+    
+      .sidebar {
+        grid-area: sidebar;
+        padding: 3rem 1rem 1rem 1rem;
+      }
+    
+      .content {
+        grid-area: content;
+      }
+    }
+    
+    .header-grid {
+      grid-area: header-grid;
+      display: grid;
+      grid-template-columns: $gutter-width auto $gutter-width;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        ". header .";
+    
+        .header {
+          grid-area: header;
+          display: grid;
+          grid-template-columns: auto 350px;
+          grid-template-rows: 1fr;
+          grid-template-areas: "header-title header-search";
+        }
+    }
+    
+    .breadcrumbs-grid {
+      grid-area: breadcrumbs-grid;
+      display: grid;
+      grid-template-columns: $gutter-width auto $gutter-width;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        ". breadcrumbs .";
+    
+        .breadcrumbs {
+          grid-area: breadcrumbs;
+          padding: $common-padding/2 0;
+          display: grid;
+          grid-template-columns: auto 350px;
+          grid-template-rows: 1fr;
+          grid-template-areas: "breadcrumbs-left breadcrumbs-right";
+    
+          .breadcrumbs-right {
+            padding: 0 $common-padding*2;
+          }
+        }
+    }
+    
+    .footer {
+      grid-area: footer;
+      display: grid;
+      grid-template-columns: $gutter-width 0.2fr 0.8fr $gutter-width;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        ". footer-left footer-right .";
+      margin-top: $common-padding;
 
-.header-grid {
-  grid-area: header-grid;
-  display: grid;
-  grid-template-columns: $gutter-width auto $gutter-width;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-    ". header .";
-}
-
-.header {
-  grid-area: header;
-  display: grid;
-  grid-template-columns: auto 350px;
-  grid-template-rows: 1fr;
-  grid-template-areas: "header-title header-search";
-}
-
-.breadcrumbs-grid {
-  grid-area: breadcrumbs-grid;
-  display: grid;
-  grid-template-columns: $gutter-width auto $gutter-width;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-    ". breadcrumbs .";
-}
-
-
-.breadcrumbs {
-  grid-area: breadcrumbs;
-  padding: $common-padding/2 $common-padding;
-  display: grid;
-  grid-template-columns: auto 350px;
-  grid-template-rows: 1fr;
-  grid-template-areas: "breadcrumbs-left breadcrumbs-right";
-}
-
-
-.breadcrumbs-right {
-  padding: 0 $common-padding*2;
-}
-
-.footer {
-  grid-area: footer;
-  display: grid;
-  grid-template-columns: $gutter-width 0.2fr 0.8fr $gutter-width;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-    ". footer-left footer-right .";
-}
-
-.footer-left {
-  grid-area: footer-left;
-  padding: $common-padding;
-}
-
-.footer-right {
-  grid-area: footer-right;
-  padding: $common-padding;
-}
-
-.sidebar {
-  grid-area: sidebar;
-  padding: 3rem 1rem 1rem 1rem;
-}
-
-.content {
-  grid-area: content;
-  padding: $common-padding;
+      .footer-left {
+        grid-area: footer-left;
+      }
+    
+      .footer-right {
+        grid-area: footer-right;
+      }
+    }
 }

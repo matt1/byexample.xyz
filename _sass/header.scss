@@ -1,10 +1,11 @@
 .header-grid {
-  background-color: #0288D1;
+  background-color: $primary-colour;
   color: #fff;
   height: $header-height;
   position: fixed;
   width: 100%;
   transition: $default-transition;
+  z-index: 100;
 }
 
 .header {

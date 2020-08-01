@@ -4,4 +4,10 @@
   ul {
     margin: 0;
   }
+
+  .ad-unit {
+    position: sticky;
+    margin-top: $common-padding;
+    top: $header-height + $breadcrumbs-height + 12px;
+  }
 }

@@ -5,8 +5,8 @@ body {
 }
 
 a {
-  border-bottom: 1px dotted #2077b2;
-  color: #2077b2;
+  border-bottom: 1px dotted $primary-colour;
+  color: $primary-colour;
   text-decoration: none;
 
   &:hover {
@@ -16,15 +16,16 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   margin: 0;
-  scroll-margin-top: $header-height + $breadcrumbs-height;//3rem;
+  scroll-margin-top: $header-height + $breadcrumbs-height;
 }
 
 h1 {
   font-size: 1.75rem;
   &.title {
     font-size: 2rem;
+    font-weight: 400;
   }
 }
 
@@ -42,5 +43,10 @@ h2 {
 }
 
 .header h1 {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Open Sans", monospace;
+  font-weight: 600;
+
+  span {
+    font-weight: 300;
+  }
 }

@@ -5,10 +5,17 @@
   top: $header-height;
   transition: $default-transition;
   font-size: 1rem;
+  z-index: 100;
 
   a, a:active, a:visited {
-    color: #0288D1;
-    border-bottom: 1px dotted #0288D1;
+    color: $primary-colour;
+    border-bottom: 1px dotted $primary-colour;
+  }
+
+  .breadcrumbs-left {
+    .navigation-icon{
+      font-size: 80%;
+    }
   }
   .breadcrumbs-right {
     display: none;
@@ -16,7 +23,7 @@
 }
 
 .sticky {
-  background-color: #3FB1EF;
+  background-color: $secondary-colour;
   color: #fff;
   height: $breadcrumbs-height;
   transition: $default-transition;
