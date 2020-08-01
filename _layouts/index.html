@@ -1,0 +1,26 @@
+{% include header.html %}
+<section class="breadcrumbs-grid">
+</section>
+<section class="content-grid">
+  <div class="content">
+    <a href="/java"><h1><img class="language" src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.svg">Java</h1></a>
+    <ul>
+      {% for example in site.examples %}
+        {% if example.lang == "java" %}
+          <li><a href="{{ example.url }}">{{example.title}}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <a href="/javascript"><h1><img class="language"  src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.svg">Javascript</h1></a>
+    <ul>
+      {% for example in site.examples %}
+        {% if example.lang == "javascript" %}
+          <li><a href="{{ example.url }}">{{example.title}}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="sidebar">
+  </div>
+{% include footer.html %}

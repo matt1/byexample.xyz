@@ -2,8 +2,17 @@
 permalink: "javascript/"
 layout: "language"
 title: "Javascript"
+lang: "javascript"
 ---
 
-<img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.svg" height="100">
-
 * [ES6](/javascript/es6/)
+
+<h2>All Javascript Examples</h2>
+<ul>
+{% assign examples = site.examples | sort_natural %}
+  {% for example in examples %}
+    {% if example.lang == "javascript" %}
+      <li><a href="{{ example.url }}">{{example.title}}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>

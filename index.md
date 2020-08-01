@@ -1,4 +1,4 @@
 ---
+
+layout: "index"
 ---
-[Java](java/)
-[Javascript](javascript/)
