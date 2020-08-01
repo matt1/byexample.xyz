@@ -5,6 +5,7 @@
 </section>
 <section class="content-grid">
   <div class="content">
+    <h1><img class="language" src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/{{ page.lang }}/{{ page.lang }}.svg">{{ page.lang | capitalize }} {{ page.version }} Examples</h1>
     {% for example in site.examples %}
       {% if example.lang == page.lang and example.version == page.version %}
         <a href="{{ example.url }}">{{example.title}}</a><br>
