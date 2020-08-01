@@ -1,8 +1,8 @@
 {
   "dir": "ltr",
-  "lang": "fr",
-  "name": "Examples",
-  "short_name": "Examples",
+  "lang": "en",
+  "name": "byexample.xyz",
+  "short_name": "byexample.xyz",
   "scope": "/",
   "display": "browser",
   "start_url": "https://byexample.xyz/",
