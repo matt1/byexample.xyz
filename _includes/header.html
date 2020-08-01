@@ -7,7 +7,7 @@
     <link href="/assets/css/style.css" rel="stylesheet" />
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>{{ page.title }}</title>
+    <title>{% if page.layout != "directory_listing" %}{{page.title}}{% else %}{{ page.lang | capitalize }} {{ page.version }}{% endif %} Examples</title>
   </head>
 
   <body>
