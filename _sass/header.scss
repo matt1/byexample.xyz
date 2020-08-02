@@ -10,6 +10,10 @@
   &.sticky {
     height: $header-height;
     font-size: 0.8rem;
+
+    @media (max-width: $max-width) {
+      height: $header-height-mobile;
+    }
   }
 }
 

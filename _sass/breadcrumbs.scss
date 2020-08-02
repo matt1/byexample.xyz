@@ -14,7 +14,7 @@
 
   @media (max-width: $max-width) {
     height: $breadcrumbs-height-mobile;
-    top: $header-height-mobile - 5; /** why is this -5 needed? */
+    top: $header-height-mobile;
     font-size: 0.8rem;
 
     // TODO(this is the same as .sticky - move to mixin? */
