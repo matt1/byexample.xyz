@@ -6,7 +6,9 @@ lang: "javascript"
 version: "es6"
 ---
 
-Removes the need for clunky string concatenation by allowing for strings with embedded expressions. Also referred to as "Template Strings".
+Removes the need for clunky string concatenation by allowing for strings with embedded expressions - this is string interpolation for Javascript.
+
+Also referred to as "Template Strings".
 
 Template literals need to be surrounded by backticks.
 
@@ -39,8 +41,20 @@ console.log(`line 1
 ## Tagged Template Literals
 Tagged template literals allow you to do manual processing of the template.
 
-This contrived example uses a tagged literal to specify an API version based
-on a boolean `useLegacyApi` in the string literal:
+For example you can "tag" the literal with a function that converts HTTP calls to HTTPS:
+
+```javascript
+console.log(makeHttps`http://example.com/api/v2/getWidget`);
+// logs "https://example.com/api/v2/getWidget"
+
+function makeHttps(templateStringParts) {
+  return templateStringParts[0].replace('http://', 'https://')
+}
+```
+
+You can also process the expression values too. This contrived example uses a
+tagged literal to specify an API version based bon a boolean `useLegacyApi` in
+the string literal:
 
 ```javascript
 
@@ -48,13 +62,13 @@ const useLegacyApi = false;
 console.log(apiVersion`http://example.com/api/${useLegacyApi}/getWidget`);
 // logs "http://example.com/api/v2/getWidget" when useLegacyApi is false.
 
-function apiVersion(strings, expr) {
-  // `strings` is an array containing "http://example.com/api/" and "/getWidget" in this example
+function apiVersion(templateStringParts, expr) {
+  // `templateStringParts` is an array containing "http://example.com/api/" and "/getWidget" in this example
   let version = 'v2';
   if (expr === true) {
       version = 'v1';
   }
-  return `${strings[0]}${version}${strings[1]}`;
+  return `${templateStringParts[0]}${version}${templateStringParts[1]}`;
 }
 ```
 
