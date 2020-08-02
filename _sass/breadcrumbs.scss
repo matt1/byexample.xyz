@@ -7,15 +7,23 @@
   font-size: 1rem;
   z-index: 100;
 
+  a, a:active, a:visited {
+    color: $primary-colour;
+    border-bottom: 1px dotted $primary-colour;
+  }
+
   @media (max-width: $max-width) {
     height: $breadcrumbs-height-mobile;
     top: $header-height-mobile - 5; /** why is this -5 needed? */
     font-size: 0.8rem;
-  }
 
-  a, a:active, a:visited {
-    color: $primary-colour;
-    border-bottom: 1px dotted $primary-colour;
+    // TODO(this is the same as .sticky - move to mixin? */
+    background-color: $secondary-colour;
+    color: #fff;
+    a, a:active, a:visited {
+      color: #fff;
+      border-bottom: 1px dotted #fff;
+    }
   }
 
   .breadcrumbs-left {
@@ -26,27 +34,29 @@
   .breadcrumbs-right {
     display: none;
   }
-}
 
-.sticky {
-  background-color: $secondary-colour;
-  color: #fff;
-  height: $breadcrumbs-height;
-  transition: $default-transition;
-  font-size: 0.8rem;
-
-  @media (max-width: $max-width) {
-    height: unset;
-  }
-
-  a, a:active, a:visited {
+  &.sticky {
+    background-color: $secondary-colour;
     color: #fff;
-    border-bottom: 1px dotted #fff;
-  }
-
-  .breadcrumbs-right {
-    display: initial;
+    height: $breadcrumbs-height;
+    transition: $default-transition;
+    font-size: 0.8rem;
+  
+    @media (max-width: $max-width) {
+      height: unset;
+    }
+  
+    a, a:active, a:visited {
+      color: #fff;
+      border-bottom: 1px dotted #fff;
+    }
+  
+    .breadcrumbs-right {
+      display: initial;
+    }
   }
 }
+
+
 
 

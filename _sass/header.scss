@@ -6,6 +6,11 @@
   width: 100%;
   transition: $default-transition;
   z-index: 100;
+
+  &.sticky {
+    height: $header-height;
+    font-size: 0.8rem;
+  }
 }
 
 .header {

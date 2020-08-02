@@ -49,12 +49,13 @@
     grid-area: header-grid;
     display: grid;
     grid-template-columns: $gutter-width auto $gutter-width;
-    grid-template-rows: 1fr;
+    grid-template-rows: $header-height;
     grid-template-areas:
       ". header .";
 
     @media (max-width: $max-width) {
       grid-template-columns: 1fr;
+      grid-template-rows: $header-height-mobile;
       grid-template-areas:
         "header";
       padding: 0 $common-padding;
@@ -83,6 +84,7 @@
   
   .breadcrumbs-grid {
     grid-area: breadcrumbs-grid;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: $gutter-width auto $gutter-width;
     grid-template-rows: 1fr;
