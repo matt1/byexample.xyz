@@ -29,6 +29,9 @@
   transition: $default-transition;
   font-size: 0.8rem;
 
+  @media (max-width: $max-width) {
+    height: unset;
+  }
   a, a:active, a:visited {
     color: #fff;
     border-bottom: 1px dotted #fff;

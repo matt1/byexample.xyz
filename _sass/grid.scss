@@ -35,6 +35,9 @@
       
       .content {
         grid-area: content;
+        @media (max-width: $max-width) {
+          width: 90vw;
+        }
       }
     }
     
