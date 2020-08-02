@@ -34,6 +34,13 @@ With destructuring you can do this in a shorter & more concise way:
 const {colour, species, legs} = myAnimal;
 ```
 
+You don't have to take everything either - you can pick only what you want.
+
+```javascript
+// With destructuring
+const {legs} = myAnimal;
+```
+
 ## Order doesn't matter, but names do
 The properties are matched on names, not order.
 ```javascript
