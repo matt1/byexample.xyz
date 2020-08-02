@@ -1,9 +1,9 @@
 ---
-title: Javascript ES6 Destructuring
+title: Javascript ECMAScript 2015 Destructuring
 linktitle: Destructuring
-permalink: "javascript/es6/destructuring/"
+permalink: "javascript/ECMAScript2015/destructuring/"
 lang: "javascript"
-version: "es6"
+version: "ECMAScript2015"
 ---
 
 Destructuring is basically a way of assigning variables from an object or array in a simple way.

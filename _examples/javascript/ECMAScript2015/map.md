@@ -1,9 +1,9 @@
 ---
-title: Javascript ES6 Maps
+title: Javascript ECMAScript 2015 Maps
 linktitle: Maps
-permalink: "javascript/es6/maps/"
+permalink: "javascript/ECMAScript2015/maps/"
 lang: "javascript"
-version: "es6"
+version: "ECMAScript2015"
 ---
 
 Maps can be created iteratively by just calling `set()` as required:

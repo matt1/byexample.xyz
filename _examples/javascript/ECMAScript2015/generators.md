@@ -1,9 +1,9 @@
 ---
-title: Javascript ES6 Generators
+title: Javascript ECMAScript 2015 Generators
 linktitle: Generators
-permalink: "javascript/es6/generators/"
+permalink: "javascript/ECMAScript2015/generators/"
 lang: "javascript"
-version: "es6"
+version: "ECMAScript2015"
 ---
 
 Generators are functions that can "yeild" (i.e. return) multiple values each

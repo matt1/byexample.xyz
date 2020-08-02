@@ -1,9 +1,9 @@
 ---
-title: Javascript ES6 Template Literals
+title: Javascript ECMAScript 2015 Template Literals
 linktitle: Template Literals
-permalink: "javascript/es6/templateLiterals/"
+permalink: "javascript/ECMAScript2015/templateLiterals/"
 lang: "javascript"
-version: "es6"
+version: "ECMAScript2015"
 ---
 
 Removes the need for clunky string concatenation by allowing for strings with embedded expressions - this is string interpolation for Javascript.
