@@ -24,13 +24,14 @@ Without destructuring if you wanted to assign the values from your object to new
 // Without destructuring
 const colour = myAnimal.colour;
 const species = myAnimal.species;
+const legs = myAnimal.legs;
 ```
 
 With destructuring you can do this in a shorter & more concise way:
 
 ```javascript
 // With destructuring
-const {colour, species} = myAnimal;
+const {colour, species, legs} = myAnimal;
 ```
 
 ## Order doesn't matter, but names do
