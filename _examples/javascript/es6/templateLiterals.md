@@ -53,7 +53,7 @@ function makeHttps(templateStringParts) {
 ```
 
 You can also process the expression values too. This contrived example uses a
-tagged literal to specify an API version based bon a boolean `useLegacyApi` in
+tagged literal to specify an API version based on a boolean variable `useLegacyApi` in
 the string literal:
 
 ```javascript
