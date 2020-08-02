@@ -5,7 +5,7 @@ title: "Javascript"
 lang: "javascript"
 ---
 
-* [ES6](/javascript/es6/)
+* [ECMAScript2015](/javascript/ECMAScript2015/)
 
 <h2>All Javascript Examples</h2>
 <ul>

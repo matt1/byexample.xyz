@@ -1,5 +1,5 @@
 ---
-title: Javascript ECMAScript 2015 Maps
+title: ECMAScript 2015 Maps
 linktitle: Maps
 permalink: "javascript/ECMAScript2015/maps/"
 lang: "javascript"

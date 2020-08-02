@@ -1,5 +1,5 @@
 ---
-title: Javascript ECMAScript 2015 Generators
+title: ECMAScript 2015 Generators
 linktitle: Generators
 permalink: "javascript/ECMAScript2015/generators/"
 lang: "javascript"

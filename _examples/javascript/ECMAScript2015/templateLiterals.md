@@ -1,5 +1,5 @@
 ---
-title: Javascript ECMAScript 2015 Template Literals
+title: ECMAScript 2015 Template Literals
 linktitle: Template Literals
 permalink: "javascript/ECMAScript2015/templateLiterals/"
 lang: "javascript"

@@ -1,5 +1,5 @@
 ---
-title: Javascript ECMAScript 2015 Destructuring
+title: ECMAScript 2015 Destructuring
 linktitle: Destructuring
 permalink: "javascript/ECMAScript2015/destructuring/"
 lang: "javascript"
