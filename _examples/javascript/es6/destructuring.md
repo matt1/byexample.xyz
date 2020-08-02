@@ -38,14 +38,16 @@ The properties are matched on names, not order.
 ```javascript
 let {legs, species} = myAnimal;
 console.log(`${species} have ${legs} legs`) // logs "dogs have 4 legs"
+```
 
-{species, legs} = myAnimal;
+```javascript
+const {species, legs} = myAnimal;
 console.log(`${species} have ${legs} legs`) // logs "dogs have 4 legs"
 ```
 
-If the names are not matched, then the variables you are destructuring to are not set.
+If the names are not matched, then the variables you are destructuring to are `undefined`.
 
 ```javascript
-let {l, s} = myAnimal;
+const {l, s} = myAnimal;
 console.log(`${s} have ${l} legs`) // logs "undefined have undefined legs"
 ```
