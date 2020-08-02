@@ -24,13 +24,21 @@ Without destructuring if you wanted to assign the values from your object to new
 // Without destructuring
 const colour = myAnimal.colour;
 const species = myAnimal.species;
+const legs = myAnimal.legs;
 ```
 
 With destructuring you can do this in a shorter & more concise way:
 
 ```javascript
 // With destructuring
-const {colour, species} = myAnimal;
+const {colour, species, legs} = myAnimal;
+```
+
+You don't have to take everything either - you can pick only what you want.
+
+```javascript
+// With destructuring
+const {legs} = myAnimal;
 ```
 
 ## Order doesn't matter, but names do
@@ -38,14 +46,16 @@ The properties are matched on names, not order.
 ```javascript
 let {legs, species} = myAnimal;
 console.log(`${species} have ${legs} legs`) // logs "dogs have 4 legs"
+```
 
-{species, legs} = myAnimal;
+```javascript
+const {species, legs} = myAnimal;
 console.log(`${species} have ${legs} legs`) // logs "dogs have 4 legs"
 ```
 
-If the names are not matched, then the variables you are destructuring to are not set.
+If the names are not matched, then the variables you are destructuring to are `undefined`.
 
 ```javascript
-let {l, s} = myAnimal;
+const {l, s} = myAnimal;
 console.log(`${s} have ${l} legs`) // logs "undefined have undefined legs"
 ```

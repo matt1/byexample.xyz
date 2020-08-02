@@ -18,7 +18,8 @@ console.log(`Hello ${thing}`); // logs "Hello world"
 Since you can use any expression, you are not limited to just variables:
 
 ```javascript
-console.log(`The answer is ${21 * 2}.`); // logs "The answer is 42."
+const myValue = 21;
+console.log(`The answer is ${myValue * 2}.`); // logs "The answer is 42."
 ```
 
 ## Escaping backticks
