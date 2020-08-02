@@ -36,3 +36,27 @@ console.log(`line 1
  line 2`);
 ```
 
+## Tagged Template Literals
+Tagged template literals allow you to do manual processing of the template.
+
+This contrived example uses a tagged literal to specify an API version based
+on a boolean `useLegacyApi` in the string literal:
+
+```javascript
+
+const useLegacyApi = false;
+console.log(apiVersion`http://example.com/api/${useLegacyApi}/getWidget`);
+// logs "http://example.com/api/v2/getWidget" when useLegacyApi is false.
+
+function apiVersion(strings, expr) {
+  // `strings` is an array containing "http://example.com/api/" and "/getWidget" in this example
+  let version = 'v2';
+  if (expr === true) {
+      version = 'v1';
+  }
+  return `${strings[0]}${version}${strings[1]}`;
+}
+```
+
+Note that the tag function needs to manually "reconstruct" the whole string by
+assembling the parts from the array of strings.
