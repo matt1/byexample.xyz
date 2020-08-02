@@ -2,143 +2,148 @@
   display: grid;
   column-gap: $common-padding;
   grid-template-columns: 1fr;
-  grid-template-rows: $header-height auto auto;
+  grid-template-rows: $header-height $breadcrumbs-height auto auto;
   grid-template-areas:
     "header-grid"
     "breadcrumbs-grid"
     "content-grid"
     "footer";
 
-    .content-grid {
-      grid-area: content-grid;
-      display: grid;
-      grid-template-columns: $gutter-width auto 350px $gutter-width;
-      grid-template-rows: auto;
+  @media (max-width: $max-width) {
+    grid-template-rows: $header-height-mobile $breadcrumbs-height-mobile auto auto;
+  }
+
+  .content-grid {
+    grid-area: content-grid;
+    display: grid;
+    grid-template-columns: $gutter-width auto 350px $gutter-width;
+    grid-template-rows: auto;
+    grid-template-areas:
+      ". content sidebar .";
+
+    @media (max-width: $max-width) {
+      grid-template-columns: 1fr;
       grid-template-areas:
-        ". content sidebar .";
+        "content";
+      padding: $common-padding
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      padding: 3rem 1rem 1rem 1rem;
+
+      @media (max-width: $max-width) {
+        display: none;
+      }
+    }
+    
+    .content {
+      grid-area: content;
+      @media (max-width: $max-width) {
+        width: 90vw;
+      }
+    }
+  }
+  
+  .header-grid {
+    grid-area: header-grid;
+    display: grid;
+    grid-template-columns: $gutter-width auto $gutter-width;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      ". header .";
+
+    @media (max-width: $max-width) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header";
+      padding: 0 $common-padding;
+    }
+  
+    .header {
+      grid-area: header;
+      display: grid;
+      grid-template-columns: auto 350px;
+      grid-template-rows: 1fr;
+      grid-template-areas: "header-title header-search";
 
       @media (max-width: $max-width) {
         grid-template-columns: 1fr;
         grid-template-areas:
-          "content";
-        padding: $common-padding
+          "header-title";
       }
+
+      .header-search {
+        @media (max-width: $max-width) {
+          display: none;
+        }
+      }
+    }
+  }
   
-      .sidebar {
-        grid-area: sidebar;
-        padding: 3rem 1rem 1rem 1rem;
+  .breadcrumbs-grid {
+    grid-area: breadcrumbs-grid;
+    display: grid;
+    grid-template-columns: $gutter-width auto $gutter-width;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      ". breadcrumbs .";
+
+    @media (max-width: $max-width) {
+      grid-template-columns: 1fr;
+      grid-template-areas: "breadcrumbs";
+      padding: $common-padding/2 0  $common-padding/2 $common-padding;
+    }
+      
+    .breadcrumbs {
+      grid-area: breadcrumbs;
+      padding: $common-padding/2 0;
+      display: grid;
+      grid-template-columns: auto 350px;
+      grid-template-rows: 1fr;
+      grid-template-areas: "breadcrumbs-left breadcrumbs-right";
+
+      @media (max-width: $max-width) {
+        grid-template-columns: 1fr;
+        grid-template-areas: "breadcrumbs-left";
+        padding: 0;
+      }
+
+      .breadcrumbs-right {
+        padding: 0 $common-padding*2;
 
         @media (max-width: $max-width) {
           display: none;
         }
       }
-      
-      .content {
-        grid-area: content;
-        @media (max-width: $max-width) {
-          width: 90vw;
-        }
-      }
     }
-    
-    .header-grid {
-      grid-area: header-grid;
-      display: grid;
-      grid-template-columns: $gutter-width auto $gutter-width;
-      grid-template-rows: 1fr;
-      grid-template-areas:
-        ". header .";
-
-      @media (max-width: $max-width) {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-          "header";
-        padding: 0 $common-padding;
-      }
-    
-      .header {
-        grid-area: header;
-        display: grid;
-        grid-template-columns: auto 350px;
-        grid-template-rows: 1fr;
-        grid-template-areas: "header-title header-search";
-
-        @media (max-width: $max-width) {
-          grid-template-columns: 1fr;
-          grid-template-areas:
-            "header-title";
-        }
-
-        .header-search {
-          @media (max-width: $max-width) {
-            display: none;
-          }
-        }
-      }
-    }
-    
-    .breadcrumbs-grid {
-      grid-area: breadcrumbs-grid;
-      display: grid;
-      grid-template-columns: $gutter-width auto $gutter-width;
-      grid-template-rows: 1fr;
-      grid-template-areas:
-        ". breadcrumbs .";
+  }
   
-      @media (max-width: $max-width) {
-        grid-template-columns: 1fr;
-        grid-template-areas: "breadcrumbs";
-        padding: $common-padding/2 0  $common-padding/2 $common-padding;
-      }
-        
-      .breadcrumbs {
-        grid-area: breadcrumbs;
-        padding: $common-padding/2 0;
-        display: grid;
-        grid-template-columns: auto 350px;
-        grid-template-rows: 1fr;
-        grid-template-areas: "breadcrumbs-left breadcrumbs-right";
-  
-        @media (max-width: $max-width) {
-          grid-template-columns: 1fr;
-          grid-template-areas: "breadcrumbs-left";
-          padding: 0;
-        }
+  .footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: $gutter-width 0.2fr 0.8fr $gutter-width;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      ". footer-left footer-right .";
+    margin-top: $common-padding;
 
-        .breadcrumbs-right {
-          padding: 0 $common-padding*2;
-
-          @media (max-width: $max-width) {
-            display: none;
-          }
-        }
-      }
-    }
-    
-    .footer {
-      grid-area: footer;
-      display: grid;
-      grid-template-columns: $gutter-width 0.2fr 0.8fr $gutter-width;
+    @media (max-width: $max-width) {
+      grid-template-columns: 1fr;
       grid-template-rows: 1fr;
       grid-template-areas:
-        ". footer-left footer-right .";
-      margin-top: $common-padding;
-
-      @media (max-width: $max-width) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-          "footer-left"
-          "footer-right";
-      }
-
-      .footer-left {
-        grid-area: footer-left;
-      }
-    
-      .footer-right {
-        grid-area: footer-right;
-      }
+        "footer-left"
+        "footer-right";
+      padding: $common-padding;
     }
+
+    .footer-left {
+      grid-area: footer-left;
+    }
+  
+    .footer-right {
+      grid-area: footer-right;
+    }
+  }
 }
 
