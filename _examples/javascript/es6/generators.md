@@ -10,7 +10,7 @@ Generators are functions that can "yeild" (i.e. return) multiple values each
 time they are called. They run until they reach a `yield` statement, and will
 carry on from there when they are next iterated.
 
-Note that generator functions have a `*` after their name.
+Note that generator functions have a `*` after `function`.
 
 ```javascript
 function* myABCsGeneratorFunction() {
