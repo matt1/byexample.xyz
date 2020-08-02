@@ -1,6 +1,6 @@
 .breadcrumbs-grid {
-  background: #fff;
-  color: #000;
+  background: var(--background);
+  color: var(--foreground);
   position: sticky;
   top: $header-height;
   transition: $default-transition;
@@ -8,8 +8,13 @@
   z-index: 100;
 
   a, a:active, a:visited {
-    color: $primary-colour;
-    border-bottom: 1px dotted $primary-colour;
+    color: var(--primary);
+    border-bottom: 1px dotted var(--primary);
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--foreground);
+      border-bottom: 1px dotted var(--foreground);
+    }
   }
 
   @media (max-width: $max-width) {
@@ -18,26 +23,40 @@
     font-size: 0.8rem;
 
     // TODO(this is the same as .sticky - move to mixin? */
-    background-color: $secondary-colour;
-    color: #fff;
+    background-color: var(--secondary);
+    color: var(--background);
+
     a, a:active, a:visited {
-      color: #fff;
-      border-bottom: 1px dotted #fff;
+      color: var(--background);
+      border-bottom: 1px dotted var(--background);
+
+      @media (prefers-color-scheme: dark) {
+        color: var(--foreground);
+        border-bottom: 1px dotted var(--foreground);
+      }
     }
   }
 
   .breadcrumbs-left {
+    @media (prefers-color-scheme: dark) {
+      color: var(--foreground);
+    }
+
     .navigation-icon{
       font-size: 80%;
     }
   }
+
   .breadcrumbs-right {
+    @media (prefers-color-scheme: dark) {
+      color: var(--foreground);
+    }
     display: none;
   }
 
   &.sticky {
-    background-color: $secondary-colour;
-    color: #fff;
+    background-color: var(--secondary);
+    color: var(--background);
     height: $breadcrumbs-height;
     transition: $default-transition;
     font-size: 0.8rem;
@@ -45,10 +64,15 @@
     @media (max-width: $max-width) {
       height: unset;
     }
-  
+
     a, a:active, a:visited {
-      color: #fff;
-      border-bottom: 1px dotted #fff;
+      color: var(--background);
+      border-bottom: 1px dotted var(--background);
+
+      @media (prefers-color-scheme: dark) {
+        color: var(--foreground);
+        border-bottom: 1px dotted var(--foreground);
+      }
     }
   
     .breadcrumbs-right {

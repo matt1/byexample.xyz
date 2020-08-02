@@ -1,12 +1,12 @@
 .footer {
-  background-color: #f5f7fa;
-  border-top: 1px solid #d2d2d2;
+  background-color: var(--footer-background);
+  border-top: 1px solid var(--footer-border);
   font-size: 80%;
   padding: 2rem 0;
 
   a {
-    border-bottom: 1px dotted #777;
-    color: #777;
-    text-decoration: noe;
+    border-bottom: 1px dotted var(--footer-link);
+    color: var(--footer-link);
+    text-decoration: none;
   }
 }
