@@ -6,6 +6,7 @@ lang: "javascript"
 ---
 
 * [ECMAScript2015](/javascript/ECMAScript2015/)
+* [ECMAScript2016](/javascript/ECMAScript2016/)
 * [ECMAScript2020](/javascript/ECMAScript2020/)
 
 <h2>All Javascript Examples</h2>
