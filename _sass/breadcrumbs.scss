@@ -7,6 +7,7 @@
   font-size: 1rem;
   z-index: 100;
 
+
   a, a:active, a:visited {
     color: var(--primary);
     border-bottom: 1px dotted var(--primary);
@@ -20,7 +21,6 @@
   @media (max-width: $max-width) {
     height: $breadcrumbs-height-mobile;
     top: $header-height-mobile;
-    font-size: 0.8rem;
 
     // TODO(this is the same as .sticky - move to mixin? */
     background-color: var(--secondary);
@@ -62,6 +62,7 @@
     font-size: 0.8rem;
   
     @media (max-width: $max-width) {
+      font-size: 1rem;
       height: unset;
     }
 
