@@ -59,7 +59,7 @@ need to do something to handle waiting for your original `async` function's
 `promise` to resolve too!  You can't use `await` unless you are in an `async`
 function, and sooner or later you'll need to break out of that.
 
-The solution here is just to go back to the old annoying `Promise` syntax to
+The solution here is just to go back to the old annoying `Promise` syntax of `.then(result => {...})` to
 perform some action after your `await` function returns.
 
 ```javascript
