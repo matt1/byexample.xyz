@@ -8,6 +8,7 @@
     "breadcrumbs-grid"
     "content-grid"
     "footer";
+  min-height: 100%;
 
   @media (max-width: $max-width) {
     grid-template-rows: $header-height-mobile $breadcrumbs-height-mobile auto auto;
