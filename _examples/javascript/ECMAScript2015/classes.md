@@ -21,7 +21,7 @@ console.log(myClassInstance); // logs "MyClass {}"
 ```
 Note that a `constructor()` function is not required.
 
-## Class Instance Variables
+## Class Instance Properties
 
 Class instance properties are properties that are present on each instance of
 the class - e.g. `this.myValue` in this example.
@@ -37,7 +37,7 @@ console.log(myClassInstance); // logs "MyClass {myValue: "hello"}"
 ```
 
 You do not *need* to declare the class instance properties, but you can if you
-want - this could be handy to define default values.
+want - this could be handy to define default values and you are not initialising in a constructor.
 
 ```javascript
 class MyClass {
