@@ -7,13 +7,13 @@ version: "ECMAScript2015"
 ---
 
 While only syntactic sugar over the existing prototype-based inheritance, the
-supported added in ECMAScript 2015 made creating classes in Javascript simple
-and intuitive, even if the inheritance model was not changed.
+support added in ECMAScript 2015 made creating classes in Javascript simple
+and intuitive, even if the inheritance model itself was not changed.
 
 
 ```javascript
 class MyClass {
-  // nothing else needed for now
+  // Empty constructors are not needed.
 }
 
 const myClassInstance = new MyClass();
