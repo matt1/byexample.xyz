@@ -74,6 +74,7 @@ class MyClass {
     console.log('Hi');
   }
 }
+// No instance required for static members.
 MyClass.myFunction(); // logs "Hi"
 ```
 
@@ -106,7 +107,7 @@ class MyClass {
 }
 const myClassInstance = new MyClass();
 myClassInstance.discount = 0.10;
-myClassInstance.totalPrice; // logs 112.455 (10% discount applied)
+console.log(myClassInstance.totalPrice); // logs 112.455 (10% discount applied)
 ```
 
 ## Inheritance
