@@ -1,5 +1,5 @@
 ---
-title: ECMAScript 2016 Async & Await
+title: ECMAScript 2017 Async & Await
 linktitle: Async & Await
 permalink: "javascript/ECMAScript2017/asyncAwait/"
 lang: "javascript"
