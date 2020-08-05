@@ -73,7 +73,7 @@ myPromise.then(
 );
 ```
 
-If you need to do any clearup, you can use the `finally()` function to do that:
+If you need to do any clean-up, you can use the `finally()` function to do that:
 
 ```javascript
 const myPromise = new Promise((resolveCallback, rejectCallback) => {
@@ -95,6 +95,8 @@ Note that `finally` still expects a callback function, but this one has no argum
 ## Chaining
 
 If a `Promise` returns another `Promise`, then you can chain them together **sequentially** one after the other with just additional `then()` handlers.
+
+> If you need parallel and not sequential execution, see the ['Calling `Promises` in parallel`](#calling-promises-in-parallel) section in this page.
 
 For example imagine a function that loads files from the internet, and you want to load several images
 
