@@ -1,7 +1,7 @@
 ---
 title: Java 8 Functional Interfaces Examples
 linktitle: Functional Interfaces
-permalink: "java/8/functionalInterface/"
+permalink: "java/8/functionalInterfaces/"
 lang: "java"
 version: "8"
 ---
