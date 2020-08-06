@@ -8,6 +8,12 @@ lang: "javascript"
 JSON objects are just the same as any other object and can be iterated over
 easily using a `for-in` loop.
 
+In this example we have just created a simple hard-coded string for the JSON
+(using the awesome
+[string template literal](/javascript/ECMAScript2015/templateLiterals/) syntax
+introduced in ECMAScript 2015), but this JSON could alternatively come from an
+API call, a database, or some other source.
+
 ```javascript
 const jsonString = `{
   "lastUpdate": 1596749224800,

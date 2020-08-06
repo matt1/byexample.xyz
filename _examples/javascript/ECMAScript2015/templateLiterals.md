@@ -38,6 +38,11 @@ console.log(`line 1
  line 2`);
 ```
 
+A great example of this can be seen on the
+[Iterating over JSON](/javascript/iterateOverJson/) example where we've defined
+a hard-coded piece of sample JSON that is spread out across many lines, but does
+not have any `\n` characters or awkward multi-line string concatenations.
+
 ## Tagged Template Literals
 Tagged template literals allow you to do manual processing of the template.
 
