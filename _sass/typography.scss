@@ -11,8 +11,8 @@ body {
 }
 
 a {
-  border-bottom: 1px dotted $primary-colour;
-  color: $primary-colour;
+  border-bottom: 1px dotted var(--primary);
+  color: var(--primary);
   text-decoration: none;
 
   &:hover {
@@ -65,4 +65,11 @@ h2 {
   span {
     font-weight: 300;
   }
+}
+
+blockquote {
+  border: 1px solid var(--primary);
+  border-left: 5px solid var(--primary);
+  margin-left: $common-padding;
+  padding-left: $common-padding;
 }

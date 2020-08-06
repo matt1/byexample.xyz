@@ -7,7 +7,7 @@ version: "ECMAScript2017"
 ---
 
 To understand `async` and `await` you need to first be familiar with
-Javascript's `promise` concept.
+Javascript's [`Promise` concept](/javascript/ECMAScript2015/promises/).
 
 The summary is that an `async` function can contain `await` expression, and
 `await` expressions simply wait for a promise to resolve. This means that you

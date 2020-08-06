@@ -1,5 +1,5 @@
 // Inline code
-p > code {
+p code, li code {
   border: 1px solid var(--code-border);
   border-radius: 4px;
   background-color:  var(--code-background-inline);
