@@ -11,6 +11,13 @@ easily using a `for-in` loop.
 ```javascript
 const jsonString = `{
   "lastUpdate": 1596749224800,
+  "status": {
+    "activeCount": 5123,
+    "permissions": {
+      "read": true,
+      "write": false
+    }
+  },
   "users": [
     {
       "id": 1,
@@ -23,7 +30,6 @@ const jsonString = `{
   ]
 }`;
 
-// Convert the JSON string into a normal object as usual.
 const jsonObject = JSON.parse(jsonString);
 
 iterateObject(jsonObject);
@@ -31,20 +37,23 @@ iterateObject(jsonObject);
 function iterateObject(parent) {
   for (const child in parent) {
     if (typeof parent[child] === "object") {
-      // N.B. this is a recursive call
       iterateObject(parent[child]);
     } else {
-      // Do whatever you want to do with each item.
-      console.log(parent[child]);
+      console.log(`${child}: ${parent[child]}`);
     }
   }
 }
 
-// logs  1596749224800
-//       1
-//       "fred@example.com"
-//       2
-//       "dave@example.com"
+// Logs:
+// "lastUpdate: 1596749224800"
+// "activeCount: 5123"
+// "read: true"
+// "write: false"
+// "id: 1"
+// "email: fred@example.com"
+// "id: 2"
+// "email: dave@example.com"
+
 ```
 
 Note that `iterateObject` calls itself recursively in order to get down to all
