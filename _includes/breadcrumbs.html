@@ -1,6 +1,26 @@
 <div class="breadcrumbs">
-  <div class="breadcrumbs-left">
   {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Root",
+          "item": "https://byexample.xyz"
+        },{% assign position = 2 %}{% for crumb in crumbs offset: 1 %}{
+          "@type": "ListItem",
+          "position": {{ position }}{% assign position = position | plus:1 %},
+          "name": "{{crumb}}",
+          "item": "https://byexample.xyz{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}"
+        }{% if forloop.last %}{% else %},{% endif %}{% endfor %}
+      ]
+    }
+    </script>
+
+  <div class="breadcrumbs-left">
   <a href="/">Root</a>
   {% for crumb in crumbs offset: 1 %}
     {% if forloop.last %}
