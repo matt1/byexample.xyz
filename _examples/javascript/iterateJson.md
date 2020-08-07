@@ -5,8 +5,8 @@ permalink: "javascript/iterateOverJson/"
 lang: "javascript"
 ---
 
-JSON objects are just the same as any other object and can be iterated over
-easily using a `for-in` loop.
+JSON objects are just the same as any other javascript object and can be iterated
+over easily using a `for-in` loop.
 
 In this example we have just created a simple hard-coded string for the JSON
 (using the awesome
