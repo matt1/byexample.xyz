@@ -4,6 +4,19 @@
 </section>
 <section class="content-grid">
   <div class="content">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "{{ page.title }}",
+        "description": "Tutorials & examples for {{ page.title }}.",
+        "provider": {
+          "@type": "Organization",
+          "name": "byexample.xyz",
+          "sameAs": "https://byexample.xyz"
+        }
+      }
+    </script>
     <h1 class="title">{{ page.title }}</h1>
     {{ content }}
   </div>
