@@ -11,6 +11,9 @@ elements of that file are available to be consumed by other Javascript files
 via the `import` keyword. These are called "named exports" - see
 [Default Exports](#default-exports) for an alternative approach.
 
+> Using modules is a great way to split your code up into more easily managed
+> components. This makes it easier to maintain and re-use your code.
+
 For example if we have two files - `main.js` and `utils.js` - we might export
 some code from the `utils.js` module to be available for use in our `main.js`
 file like so:
@@ -70,7 +73,7 @@ using simple `<script>` tags, you'll see errors:
 This is because the browser needs to be instructed to treat the `script` tag as
 a module by providing the `type="module"` attribute:
 
-```javascript
+```html
 <script type="module" src="main.js"></script>
 ```
 
@@ -120,7 +123,7 @@ reading this code that the `doSomething` and `myVariable` members come from the
 
 ## Module Barrels
 
-In what can only be a sign that we really are running out of names to give to
+In what can only be a sign that we *really are* running out of names to give to
 things, "barrels" are the idea of grouping module `export`s together in another
 module file so that importing code only needs to `import` from a single module.
 
@@ -140,5 +143,12 @@ export {somethingFromModuleTwo} from './module2.js';
 export {somethingFromModuleThree} from './module3.js';
 
 // In main.js
-import {somethingFromModuleOne, somethingFromModuleTwo ,somethingFromModuleThree} from './myModules/index.js'
+import {somethingFromModuleOne, somethingFromModuleTwo, somethingFromModuleThree} from './myModules/index.js';
+// or
+import * as MyModule from './myModules/index.js';
 ```
+
+This tidies up the `import` statements and groups together related imports.
+Without this, each imported member (e.g. `somethingFromModuleOne`) would be on
+a separate line, and may be re-ordered by code formatters so that related
+imports are no-longer near each other.
