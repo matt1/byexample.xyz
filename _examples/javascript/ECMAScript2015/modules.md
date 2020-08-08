@@ -148,7 +148,8 @@ import {somethingFromModuleOne, somethingFromModuleTwo, somethingFromModuleThree
 import * as MyModule from './myModules/index.js';
 ```
 
-> By convention, the barrel is always in `index.js`.
+> By convention the barrel is typically defined in `index.js`, but you can use
+> any filename.
 
 This tidies up the `import` statements and groups together related imports.
 Without this, each imported member (e.g. `somethingFromModuleOne`) would be on
