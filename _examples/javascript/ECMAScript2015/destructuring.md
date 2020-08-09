@@ -134,12 +134,17 @@ const myPetShop = {
   city: 'London',
 };
 
-function describeAnimal({species, legs}, {name:petShopName}) {
-  console.log(`I take my ${species} to ${petShopName}`);
+function describeAnimal({species}, {name:petShopName}) {
+  console.log(`I got my ${species} from ${petShopName}`);
 }
 
-describeAnimal(myAnimal, myPetShop); // logs "I take my dog to Best-4-pets"
+describeAnimal(myAnimal, myPetShop); // logs "I got my dog from Best-4-pets"
 ```
+
+Note there that we have also renamed the `name` property from the `myPetShop`
+object to `petShopName`. This helps make the function code clearer and easier
+to understand (there is no confusion about the name of the animal vs the
+pet shop.
 
 ### `arguments` an function argument destructuring
 
