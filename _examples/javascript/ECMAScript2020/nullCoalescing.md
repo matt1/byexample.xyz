@@ -6,10 +6,18 @@ lang: "javascript"
 version: "ECMAScript2020"
 ---
 
-Also known a "nullish coalescing operator".
+A classic problem with older javascript code was that values could often be
+`null` or `undefined`, and so you'd need to write code to check for that and
+provide a default value if that was the case. The null coalescing operator
+(sometimes also called the nullish coalescing operator) is a fancy name for what
+is basically just a simple operator that removes the need for manual
+`null` or `undefined` checks, and gives us a simple, clean, and compact syntax
+instead. This is very handy since these are the sort of checks that happen
+*a lot* in Javascript code.
 
-Returns the right-hand if the left-hand is `null` or `undefined`. This can be
-used to neatly provide a default value for variables if they are null or undefined.
+The null coalescing operator is simply just two question marks back-to-back:
+`??`. If the left-hand side is not `null` or `undefined` it will be used,
+otherwise the right-hand side will be used as the "default"
 
 ```javascript
 const myValOne = 7 ?? "a default for myValOne";

@@ -6,11 +6,25 @@ lang: "javascript"
 version: "ECMAScript2015"
 ---
 
-Removes the need for clunky string concatenation by allowing for strings with embedded expressions - this is string interpolation for Javascript.
+Before the introduction of template literals to Javscript, if we wanted to
+generate a string in Javascript we had to rely on clunky string concatenation
+code where we were joining multiple string literalsand variables together with
+`+` operators, for example `const greeting = 'Hello ' + name + '!';`. This got
+even worse when we were doing multiline strings as we needed to add a lot of
+`\n` concatenations into the code to break things up. This made our code
+difficult to read and quite verbose in places.
 
-Also referred to as "Template Strings".
+Luckily in ECMAScript 2015 the concept of template literals (sometimes also
+referred to as template strings) was introduced - this is string interpolation
+for Javascript and means that we can include variables into our string literals
+in a much cleaner and more easily read way, making our code clean and easier
+to maintain.
 
-Template literals need to be surrounded by backticks.
+Unlike normal string literals in Javascript that are surrounded by single or
+double quotes (i.e. `'` or `"`) template literals can be identified by the fact
+that they are surrounded by backticks (i.e. `\``). If you try to use the
+string literal syntax (`${...}`) inside a normal string literal, the
+substitution of the variable's value will not happen.
 
 ```javascript
 const thing = 'world';

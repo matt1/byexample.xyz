@@ -6,10 +6,18 @@ lang: "javascript"
 version: "ECMAScript2015"
 ---
 
-While only syntactic sugar over the existing prototype-based inheritance, the
-support added in ECMAScript 2015 made creating classes in Javascript simple
-and intuitive, even if the inheritance model itself was not changed.
+While Javascript's `class` syntax is only syntactic sugar over the existing
+prototype-based inheritance, the support added in ECMAScript 2015 made creating
+classes in Javascript much more familiar to developers who may be more used to
+"traditional" class-based languages (e.g. Java, or C#) even if Javascript's
+inheritance model itself was not changed.
 
+However, while we can now define `class` objects and instantiate new instances
+of those classes using the `new ...()` syntax just like we can in languages like
+Java or C#, there are still some limitations that are still important to
+consider, for example there is no native support for concepts of visibility
+(i.e. `public` or `private` fields - although there is a proposal in the works
+for private fields).
 
 ```javascript
 class MyClass {
