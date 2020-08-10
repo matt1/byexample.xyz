@@ -2,6 +2,7 @@
 title: ECMAScript 2020 Null Coalescing Operator
 linktitle: Null Coalescing Operator
 permalink: "javascript/ECMAScript2020/nullCoalescing/"
+short-description: "Learn how to use Javascript's ?? null coalescing operator to provide default values."
 lang: "javascript"
 version: "ECMAScript2020"
 ---

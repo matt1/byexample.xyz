@@ -2,6 +2,7 @@
 title: Javascript DOMContentLoaded
 linktitle: DOMContentLoaded
 permalink: "javascript/DOMContentLoaded/"
+short-description: "Learn how to use Javascript's DOMContentLoaded event to perform actions when the page is ready."
 lang: "javascript"
 ---
 

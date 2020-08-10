@@ -2,6 +2,7 @@
 title: ECMAScript 2017 Async & Await
 linktitle: Async & Await
 permalink: "javascript/ECMAScript2017/asyncAwait/"
+short-description: "Understand how to use Javascript's async and await to make your asynchronous code clearer and easier to understand."
 lang: "javascript"
 version: "ECMAScript2017"
 ---

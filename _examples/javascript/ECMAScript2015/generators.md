@@ -2,6 +2,7 @@
 title: ECMAScript 2015 Generators
 linktitle: Generators
 permalink: "javascript/ECMAScript2015/generators/"
+short-description: "See examples of how to use Javascript's generator functions and the yield keyword."
 lang: "javascript"
 version: "ECMAScript2015"
 ---

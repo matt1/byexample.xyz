@@ -2,6 +2,7 @@
 title: ECMAScript 2015 Maps
 linktitle: Maps
 permalink: "javascript/ECMAScript2015/maps/"
+short-description: "See examples for how to perform common Map operations in Javascript."
 lang: "javascript"
 version: "ECMAScript2015"
 ---

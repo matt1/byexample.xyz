@@ -2,6 +2,7 @@
 title: ECMAScript 2015 Classes
 linktitle: Classes
 permalink: "javascript/ECMAScript2015/classes/"
+short-description: "See examples of how to use Javascript's class syntax for trouble-free architecture."
 lang: "javascript"
 version: "ECMAScript2015"
 ---

@@ -2,6 +2,7 @@
 title: ECMAScript 2015 Promises
 linktitle: Promises
 permalink: "javascript/ECMAScript2015/promises/"
+short-description: "See examples for how to ise Javascript's Promises to write clean and clear asynchronous code."
 lang: "javascript"
 version: "ECMAScript2015"
 ---

@@ -2,11 +2,12 @@
 title: ECMAScript 2015 Destructuring
 linktitle: Destructuring
 permalink: "javascript/ECMAScript2015/destructuring/"
+short-description: "See examples and learn how to use Javascript's destructuring."
 lang: "javascript"
 version: "ECMAScript2015"
 ---
 
-Destructuring is basically a way of assigning local variables from the contents 
+Destructuring is basically a way of assigning local variables from the contents
 of an object or array in a simple way.
 
 You may have already used destructuring without even realising if you have ever

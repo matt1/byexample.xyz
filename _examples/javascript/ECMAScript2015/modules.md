@@ -2,6 +2,7 @@
 title: ECMAScript 2015 Modules
 linktitle: Modules
 permalink: "javascript/ECMAScript2015/modules/"
+short-description: "Learn how to use Javascript's modules to import and export functionality."
 lang: "javascript"
 version: "ECMAScript2015"
 ---

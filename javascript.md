@@ -2,6 +2,7 @@
 permalink: "javascript/"
 layout: "language"
 title: "Javascript"
+short-description: "View tutorials and examples for all Javascript versions."
 lang: "javascript"
 ---
 

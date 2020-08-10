@@ -2,6 +2,7 @@
 permalink: "java/"
 layout: "language"
 title: "Java"
+short-description: "View tutorials an examples for all Java versions."
 lang: "java"
 ---
 

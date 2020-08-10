@@ -2,13 +2,14 @@
 title: ECMAScript 2015 Template Literals
 linktitle: Template Literals
 permalink: "javascript/ECMAScript2015/templateLiterals/"
+short-description: "See examples of how to use Javascript's template literals to create new strings."
 lang: "javascript"
 version: "ECMAScript2015"
 ---
 
 Before the introduction of template literals to Javscript, if we wanted to
 generate a string in Javascript we had to rely on clunky string concatenation
-code where we were joining multiple string literalsand variables together with
+code where we were joining multiple string literals and variables together with
 `+` operators, for example `const greeting = 'Hello ' + name + '!';`. This got
 even worse when we were doing multiline strings as we needed to add a lot of
 `\n` concatenations into the code to break things up. This made our code

@@ -2,6 +2,7 @@
 title: Javascript Iterate Over JSON
 linktitle: Iterate Over JSON
 permalink: "javascript/iterateOverJson/"
+short-description: "Learn and understand how to iterate over a JSON object - even with nested fields - in Javascript."
 lang: "javascript"
 ---
 
