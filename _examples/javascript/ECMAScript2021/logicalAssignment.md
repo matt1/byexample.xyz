@@ -15,7 +15,7 @@ before potentially assigning a new value.
 Now we can conditionally assign a variable based on a logical operation, and we
 skip the need to call any `set` setters - this is the short-circuit
 functionality that we're familiar with when we're using the logical operators
-in a normal conditional statement (e.g. ``(var1 && var2 && var3)` will
+in a normal conditional statement (e.g. `(var1 && var2 && var3)` will
 short-circuit and not consider `var2` and `var3` if `var1` is false).
 
 While these logical assignment operators may feel weird and alien to you at
