@@ -15,7 +15,7 @@ before potentially assigning a new value.
 Now we can conditionally assign a variable based on a logical operation, and we
 skip the need to call any `set` setters - this is the short-circuit
 functionality that we're familiar with when we're using the logical operators
-in a normal conditional statement (e.g. `(var1 && var2 && var3)` will
+in a normal conditional statement (e.g. ``(var1 && var2 && var3)` will
 short-circuit and not consider `var2` and `var3` if `var1` is false).
 
 While these logical assignment operators may feel weird and alien to you at
@@ -24,6 +24,7 @@ to`+=` or `*=` where you are modifying the value of a variable without an
 explicit assignment.
 
 # Logical AND Assignment - `&&=`
+
 The logical AND assignment operator will only assign if the left operand is
 **truthy**.
 
@@ -39,6 +40,19 @@ The equivalent code with conditional `if` statements might be:
 if (a) {
     a = b;
 }
+```
+
+A real world example of this might be in a situation where you want to provide
+an alternative value if something is already set, e.g. providing a more
+user-friendly error message.
+
+```javascript
+let errorResponse = doAPICall(); 
+
+// doAPICall might return a user-hostile error code (e.g. just '500' etc), so
+// if it does provide a more friendly one for users.
+errorResponse &&= 'There was an error - please try again later.';
+alert(errorResponse);
 ```
 
 # Logical OR Assignment - `||=`
@@ -61,6 +75,18 @@ if (!a) {
 }
 ```
 
+A real world example might be used where a value might legitimately be an empty
+string and you'd like to provide a default.
+
+```javascript
+const userName = '';
+
+username = ...; // some function that might or might not set userName.
+
+userName ||= 'Unknown';
+
+```
+
 # Logical Nullish Assignment - `??=`
 
 The logical nullish assignment operator will only assign if the left operand is
@@ -78,4 +104,25 @@ The equivalent code with conditional `if` statements might be:
 if (a == null) {
     a = b;
 }
+```
+
+Be careful when using this operator: just like with the [Null Coalescing Operator](/javascript/ECMAScript2020/nullCoalescing/), this only understands *nullish* values,
+and will not work for values that are *falsy*. If you are checking a string that
+might be `''` then this is *falsy* and not *nullish* - you should use [Logical
+OR assignment `||=`](#logical-or-assignment---) instead .
+
+A real-world example for this might be where you want to provide some default
+values when something is nullish.
+
+```javascript
+function printAnimalDetails(animalConfig) {
+  animalConfig.type ??= 'mammal';
+  console.log(animalConfig);
+}
+
+// logs "{{ color: 'silver', type: 'fish' }}"
+printAnimalDetails({ color: "silver", type: 'fish' }); 
+
+ // logs "{{ color: "brown", type: 'mammal' }}"
+printAnimalDetails({ color: "brown" });
 ```
