@@ -23,7 +23,7 @@ first glance, consider them as part of a similar family of operators
 to`+=` or `*=` where you are modifying the value of a variable without an
 explicit assignment.
 
-# Logical AND Assignment - `&&=`
+## Logical AND Assignment - `&&=`
 
 The logical AND assignment operator (also known as "and and equals operator") will only assign if the left operand is
 **truthy**.
@@ -31,6 +31,7 @@ The logical AND assignment operator (also known as "and and equals operator") wi
 ```javascript
 a &&= b;
 ```
+
 * If `a` is **truthy**, then assign `b` to `a` (i.e. `a = b;`)
 * If `a` ia not truthy, do nothing.
 
@@ -47,7 +48,7 @@ an alternative value if something is already set, e.g. providing a more
 user-friendly error message.
 
 ```javascript
-let errorResponse = doAPICall(); 
+let errorResponse = doAPICall();
 
 // doAPICall might return a user-hostile error code (e.g. just '500' etc), so
 // if it does provide a more friendly one for users.
@@ -55,7 +56,7 @@ errorResponse &&= 'There was an error - please try again later.';
 alert(errorResponse);
 ```
 
-# Logical OR Assignment - `||=`
+## Logical OR Assignment - `||=`
 
 Also known as the "Javascript mallet operator" or "or or equals operator", the logical OR assignment
 operator only assigns if the left operand is **falsy**.
@@ -87,7 +88,7 @@ userName ||= 'Unknown';
 
 ```
 
-# Logical Nullish Assignment - `??=`
+## Logical Nullish Assignment - `??=`
 
 The logical nullish assignment operator (also know as the "Q Q equals operator") will only assign if the left operand is
 **nullish**.
@@ -95,6 +96,7 @@ The logical nullish assignment operator (also know as the "Q Q equals operator")
 ```javascript
 a ??= b;
 ```
+
 * If `a` is **nullish**, then assign `b` to `a` (i.e. `a = b;`)
 * If `a` ia not nullish, do nothing.
 
