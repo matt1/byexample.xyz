@@ -25,7 +25,7 @@ explicit assignment.
 
 # Logical AND Assignment - `&&=`
 
-The logical AND assignment operator will only assign if the left operand is
+The logical AND assignment operator (also known as "and and equals operator") will only assign if the left operand is
 **truthy**.
 
 ```javascript
@@ -57,7 +57,7 @@ alert(errorResponse);
 
 # Logical OR Assignment - `||=`
 
-Also known as the "Javascript mallet operator", the logical OR assignment
+Also known as the "Javascript mallet operator" or "or or equals operator", the logical OR assignment
 operator only assigns if the left operand is **falsy**.
 
 ```javascript
@@ -89,7 +89,7 @@ userName ||= 'Unknown';
 
 # Logical Nullish Assignment - `??=`
 
-The logical nullish assignment operator will only assign if the left operand is
+The logical nullish assignment operator (also know as the "Q Q equals operator") will only assign if the left operand is
 **nullish**.
 
 ```javascript
