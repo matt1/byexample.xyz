@@ -112,7 +112,7 @@
         {% endif %}
 
         {% capture anchor_body %}{% if include.sanitize %}{{ header | strip_html }}{% else %}{{ header }}{% endif %}{% endcapture %}
-        {% capture anchor_body %}{{ anchor_body | replace: "|", "\|" }}{% endcapture %}
+        {% capture anchor_body %}{{ anchor_body }}{% endcapture %}
 
         {% if html_id %}
             {% capture list_item %}[{{ anchor_body }}]({% if include.baseurl %}{{ include.baseurl }}{% endif %}#{{ html_id }}){% endcapture %}
