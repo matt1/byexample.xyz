@@ -110,8 +110,8 @@ if (a == null) {
 
 Be careful when using this operator: just like with the [Null Coalescing Operator](/javascript/ECMAScript2020/nullCoalescing/), this only understands *nullish* values,
 and will not work for values that are *falsy*. If you are checking a string that
-might be `''` then this is *falsy* and not *nullish* - you should use [Logical
-OR assignment `||=`](#logical-or-assignment---) instead.
+might be `''` then this is *falsy* and not *nullish* - you should use
+[Logical OR assignment `||=`](#logical-or-assignment---) instead.
 
 A real-world example for this might be where you want to provide some default
 values when something is nullish.
@@ -122,9 +122,9 @@ function printAnimalDetails(animalConfig) {
   console.log(animalConfig);
 }
 
-// logs "{{ color: 'silver', type: 'fish' }}"
+// logs "{ color: 'silver', type: 'fish' }"
 printAnimalDetails({ color: "silver", type: 'fish' });
 
- // logs "{{ color: "brown", type: 'mammal' }}"
+ // logs "{ color: "brown", type: 'mammal' }"
 printAnimalDetails({ color: "brown" });
 ```
