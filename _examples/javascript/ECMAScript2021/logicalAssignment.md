@@ -1,5 +1,5 @@
 ---
-title: Javascript Logical Assignment Operators
+title: ECMAScript 2021 Logical Assignment Operators
 linktitle: Logical Assignment Operators
 permalink: "javascript/ECMAScript2021/logicalAssignment/"
 short-description: "Learn and understand how to use the logical assignment operators (??=, ||= and &&=) in javascript."
