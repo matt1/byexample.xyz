@@ -38,8 +38,8 @@ const myArray = [
 // Used to sort instances of `myObject` based on the `value` property.
 const myObjectCompareFunction = (objA, objB) => {
   // We're just using numerical greater-than but you could do anything here.
-  if (objA.value > objB.value) return 1;		// objA goes above objB
-  if (objA.value < objB.value) return -1;		// objB goes above objA
+  if (objA.value > objB.value) return 1;  // objA goes above objB
+  if (objA.value < objB.value) return -1; // objB goes above objA
   return 0;
 };
 
