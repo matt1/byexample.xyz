@@ -36,10 +36,10 @@ const myArray = [
 ];
 
 // Used to sort instances of `myObject` based on the `value` property.
-const myObjectCompareFunction = (objA, objB) => {
+const myObjectCompareFunction = (a, b) => {
   // We're just using numerical greater-than but you could do anything here.
-  if (objA.value > objB.value) return 1;  // objB goes above objA
-  if (objA.value < objB.value) return -1; // objA goes above objB
+  if (a.value > b.value) return 1;  // b goes above a
+  if (a.value < b.value) return -1; // a goes above b
   return 0;
 };
 
@@ -55,7 +55,7 @@ When writing custom compare functions, remember that if we pass in parameters
  * Returning 0 means leave `a` & `b` as they are (compared to each other)
  * Returning 1 means `b` should be below `a`
 
-Technically you can return any values less than or greater than 0 (so e.g. `-34534` or `10` are also fine) which gives you some flexibility in your algorithm.
+Technically you can return any values less than or greater than 0 (so e.g. `-34534` or `10` are also fine) which gives you some flexibility in your algorithm - e.g. often you will just see code where the compare function simply does something like `return a - b;`
 
 ## Getting the Min & Max from an Array of Objects
 
