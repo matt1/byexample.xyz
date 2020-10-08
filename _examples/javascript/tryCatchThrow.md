@@ -13,11 +13,11 @@ code.
 
 ```javascript
 try {
-	// Do something that might trigger an error
+  // Do something that might trigger an error
 } catch (error) {
-	// Only runs when there is an error/exception
+  // Only runs when there is an error/exception
 } finally {
-	// Code here always runs. Doesn't matter if there was an error or not.
+  // Code here always runs. Doesn't matter if there was an error or not.
 }
 ```
 
