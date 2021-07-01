@@ -9,7 +9,7 @@ lang: "javascript"
 Making objects immutable in Javascript can be useful for a few basic reasons:
  * **All modifications are explicit** For example if you are passing an object to various functions, can you be *sure* that one of the functions did not change something within your object? An immutable object *cannot be modified* so you cabn be entirely sure that it was not modified.
  * **Change Detection** and/or **Equality Checks** If you need to check to see if an immutable object has changed, then it is just a simple matter of doing a strict equality check (i.e. `===`), but for a mutable object you need to check every property. This is what is used by Angular, React, Redux and others to check for changes.
- * **Easier testing** If all modifications to an object happen via an assignment, or via a [Pure Functions](#pure-function) then your code is usually significantly easier to test.
+ * **Easier testing** If all modifications to an object happen via an assignment, or via a [Pure Functions](#pure-functions) then your code is usually significantly easier to test.
 
 So in summary immutability itself does not offer any intrinsic benefits on it own - it is just how you structure your code to use immutability to avoid common sources of bugs, confusion, or difficult to debug weirdness (... or you simply use a framework that relies on immutability).
 
