@@ -23,7 +23,7 @@ to maintain.
 
 Unlike normal string literals in Javascript that are surrounded by single or
 double quotes (i.e. `'` or `"`) template literals can be identified by the fact
-that they are surrounded by backticks (i.e. `\``). If you try to use the
+that they are surrounded by backticks (i.e. <code>\`</code>). If you try to use the
 string literal syntax (`${...}`) inside a normal string literal, the
 substitution of the variable's value will not happen.
 
